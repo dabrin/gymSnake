@@ -5,9 +5,9 @@
         <div class="col-sm-12" style="max-width: 650px">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h2 class="display-10">¡Bienvenido a Taca Taca!</h2>
+                    <h2 class="display-10">¡Bienvenidos a GymSnake!</h2>
                     <img src="public/img/home.png" style="width: 90%; margin-left: 5%">
-                    <p class="lead">Aquí puede buscar su ruta más óptima</p>
+                    <p class="lead">Aquí puede realizar su horario de entrenamiento.</p>
                 </div>
             </div>
         </div>
