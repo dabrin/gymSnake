@@ -60,7 +60,7 @@
                     <a class="nav-link" href="#Clases">Clases</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Contactenos">Contáctenos</a>
+                    <a class="nav-link" href="#footer">Contáctenos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?controller=Login&action=defaultAction">Login</a>

@@ -78,7 +78,7 @@
               <div class="col-4">
               </div>
               <div class="col-8">
-                <h2 class="mb-0 site-logo"><a href="index.html">Gym<strong>Snake</strong>  </a></h2>
+                <h2 class="mb-0 site-logo"><a href="index.php">Gym<strong>Snake</strong>  </a></h2>
 
               </div>
             </div>
@@ -174,7 +174,7 @@
 
     </div>
 
-    <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="index.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
+    <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="index.php" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
 
     <footer class="site-footer">
@@ -216,7 +216,7 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas 
+            Copyright &copy;</script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas 
             </p>
           </div>
           

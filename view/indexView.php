@@ -29,7 +29,7 @@
               <div class="col-4">
               </div>
               <div class="col-4">
-                <h2 class="mb-0 site-logo"><a href="index.html">Gym<strong>Snake</strong>  </a></h2>
+                <h2 class="mb-0 site-logo"><a href="index.php">Gym<strong>Snake</strong>  </a></h2>
 
               </div>
 
@@ -123,7 +123,7 @@
             </span>
             <h2> Crossfit</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
 
@@ -134,7 +134,7 @@
             </span>
             <h2> Functional</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
 
@@ -145,7 +145,7 @@
             </span>
             <h2>Boxing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
 
@@ -156,7 +156,7 @@
             </span>
             <h2>Baile</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
 
@@ -227,7 +227,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 8:00am &mdash; 9:00am</div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $val;?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="contact.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Incribirse</a></div>
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="public/contact.php" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Inscribirse</a></div>
               </div>
             </div> 
           <!--DOMING-->      
@@ -238,7 +238,7 @@
       
  
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>

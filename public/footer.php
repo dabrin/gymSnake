@@ -1,9 +1,9 @@
 <footer class="site-footer">
-      <div class="container">
+      <div  class="container">
         <!--Inicio del about-->
         <div class="row">
        
-          <div class="col-lg-5">
+          <div id=footer class="col-lg-5">
             <div class="row mb-5">
               <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contáctenos </h3></div>
               <div class="col-md-6">
