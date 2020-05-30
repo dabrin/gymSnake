@@ -58,6 +58,8 @@
     </div>
   
 
+  <!-- Inicio del carusel-->
+
     <div class="slide-one-item home-slider owl-carousel">
       
       <div class="site-blocks-cover" style="background-image: url(public/images/4.jpeg);">
@@ -83,6 +85,10 @@
 
     </div>
 
+      <!-- Fin del carusel-->
+
+
+  <!-- Inicio sobre nosotros-->
 
     
     <div class="site-section">
@@ -106,9 +112,15 @@
       </div>
     </div>
 
+    <!-- Fin sobre nosotros-->
+
+
+
+<!-- Inicio de las clases-->
 
     <div class="border-bottom">
       <div class="row no-gutters">
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5 bg-light">
             <span class="d-block mb-3">
@@ -116,8 +128,10 @@
             </span>
             <h2> Crossfit</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
@@ -125,18 +139,21 @@
             </span>
             <h2> Functional</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5 bg-light">
             <span class="d-block mb-3">
               <span class="flaticon-boxing display-4"></span>
             </span>
-            
             <h2>Boxing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
@@ -147,8 +164,11 @@
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
       </div>
     </div> <!-- .block-feature -->
+    
+    <!-- Fin de las clases-->
 
 
 
