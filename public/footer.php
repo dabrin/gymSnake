@@ -1,9 +1,10 @@
+<div class="">
 <footer class="site-footer">
       <div  class="container">
         <!--Inicio del about-->
         <div class="row">
        
-          <div id=footer class="col-lg-5">
+          <div id=Contactenos class="col-lg-5">
             <div class="row mb-5">
               <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contáctenos </h3></div>
               <div class="col-md-6">
@@ -34,12 +35,13 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas and Dabrin Nájera 
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas and Dabrin Nájera 
             </p>
           </div>
           
         </div>
       </div>
     </footer>
+    </div>
 </body>
 </html>

@@ -159,17 +159,17 @@
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+        
 
       </div>
     </div> <!-- .block-feature -->
     
     <!-- Fin de las clases-->
 
-
-
+<!--block-schedule p-5  overlay--> <!-- 
     <div class="block-schedule overlay site-section" style="background-image: url(public/images/7.jpeg);">
       <div class="container">
-        <h2 class="text-white display-4 mb-5">Horario</h2>
+        <h2 class="text-white display-4 mb-5">Horario de Sala de Pesas</h2>
         <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
           <li class="nav-item">
             <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Lunes</button>
@@ -186,7 +186,6 @@
           <li class="nav-item">
             <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Viernes</button>
           </li>
-          <!--MODIFICAR ESTE-->
           <li class="nav-item">
             <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Sábado</button>
           </li>
@@ -198,6 +197,44 @@
         </div>
       </div>      
     </div>
+    -->
+
+
+    
+    <div id="Pesas" class="block-schedule overlay site-section" style="background-image: url(public/images/gym3.jpg);">
+      <div class="container">
+
+      <h2 class="text-white display-4 mb-5">Horario de Sala de Pesas</h2>
+
+        <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
+          
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " data-toggle="modal" data-target="#myModal" href="#pills-monday" role="tab" aria-controls="pills-monday" aria-selected="true">Lunes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-tuesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-tuesday" role="tab" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-wednesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-wednesday" role="tab" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-thursday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-thursday" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-friday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-friday" role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
+          </li>  
+          <li class="nav-item">
+            <a class=" btn btn-primary " id="pills-sunday-tab" style="margin-left: 0.5em"data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-sunday" aria-selected="true">Domingo</a>
+          </li>
+
+
+        </ul>
+        
+        </div>        
+   </div>  
 
   
 

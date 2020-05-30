@@ -32,7 +32,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Gym<strong>Snake</strong></a>
+       <!-- <a class="navbar-brand" href="#">Gym<strong>Snake</strong></a>-->
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <!---->   
@@ -60,8 +60,12 @@
                     <a class="nav-link" href="#Clases">Clases</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contáctenos</a>
+                    <a class="nav-link" href="#Pesas">Sala de Pesas</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contactenos">Contáctenos</a>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="?controller=Login&action=defaultAction">Login</a>
                 </li>

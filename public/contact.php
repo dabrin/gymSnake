@@ -78,7 +78,7 @@
               <div class="col-4">
               </div>
               <div class="col-8">
-                <h2 class="mb-0 site-logo"><a href="index.php">Gym<strong>Snake</strong>  </a></h2>
+                <h2 class="mb-0 site-logo"><a href="indexView.php">Gym<strong>Snake</strong>  </a></h2>
 
               </div>
             </div>
@@ -114,12 +114,6 @@
                   <input type="text" id="fullname" class="form-control" placeholder="Nombre Completo" required>
                 </div>
               </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="ejemplo@mail.com">
-                </div>
-              </div>
 
 
               <div class="row form-group">
@@ -147,8 +141,7 @@
           <thead>
             <tr>
             <!--  <th scope="col">#</th>-->
-              <th scope="col">Nombre</th>
-              <th scope="col">Correo</th>
+              <th scope="col">Nombre Completo</th>
               <th scope="col">Teléfono</th>
             </tr>
           </thead>
@@ -156,13 +149,11 @@
             <tr>
          <!--     <th scope="row">1</th>-->
               <td>Mark</td>
-              <td>Otto@mail.com</td>
               <td>12345678</td>
             </tr>
             <tr>
            <!--   <th scope="row">2</th>-->
               <td>Jacob</td>
-              <td>Thornton@mail.com</td>
               <td>98765432</td>
             </tr>
            
@@ -174,7 +165,7 @@
 
     </div>
 
-    <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="index.php" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
+    <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="indexView.php" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
 
     <footer class="site-footer">
@@ -253,7 +244,6 @@
     e.preventDefault();
 
     const nombre=document.querySelector("input[id=fullname]");
-    const email=document.querySelector("input[id=email]");
     const telefono=document.querySelector("input[id=phone]");
 
     if(!nombre.value)
@@ -271,11 +261,6 @@
     tdNombre.className="nombre";
     //--------------------------------------
 
- 
-    const tdEmail=document.createElement("td");
-     txt=document.createTextNode(email.value);
-    tdEmail.appendChild(txt);
-    tdEmail.className="email";
     //--------------------------------------
     
  
@@ -301,7 +286,6 @@
     tdRemove.appendChild(buttonRemove);
 
     tr.appendChild(tdNombre);
-    tr.appendChild(tdEmail);
     tr.appendChild(tdTelefono);
    // tr.appendChild(tdRemove);
 
@@ -311,7 +295,6 @@
  document.getElementById("listado").classList.remove("hide");
 
  //limpiamos los valores del input
- email.value="";
  nombre.value="";
  telefono.value="";
  nombre.focus();
