@@ -12,11 +12,13 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
+     <!-- 
     <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
         <div class="container py-2">
           <div class="row align-items-center">
-            <div class="col-6">
+         
+          <div class="col-6">
               <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
               <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
               <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
@@ -38,6 +40,7 @@
         </div>
       </div>
     </div>
+    -->
     
     <div class="site-navbar-wrap bg-white">
       
@@ -47,10 +50,24 @@
             <div class="row align-items-center">
               <div class="col-4">
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <h2 class="mb-0 site-logo"><a href="index.html">Gym<strong>Snake</strong>  </a></h2>
 
               </div>
+
+              <div class="col-2">
+                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                  <span class="icon-envelope mr-2"></span>
+                  <span class="d-none d-md-inline-block">gymsnake@gmail.com</span>
+                </a>
+                </div>
+                <div class="col-2">
+                <a href="tel://12912830302" class="d-flex align-items-center">
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block">+506 8888 88 88</span>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -91,7 +108,7 @@
   <!-- Inicio sobre nosotros-->
 
     
-    <div class="site-section">
+    <div id="SobreNosotros" class="site-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
@@ -118,7 +135,7 @@
 
 <!-- Inicio de las clases-->
 
-    <div class="border-bottom">
+    <div id="Clases" class="border-bottom">
       <div class="row no-gutters">
 
         <div class="col-md-6 col-lg-3">
@@ -287,7 +304,7 @@
 
     
     <footer class="site-footer">
-      <div class="container">
+      <div id=Contactenos class="container">
         
 
         <!--Inicio del about-->
