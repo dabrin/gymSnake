@@ -9,6 +9,11 @@
         height: 70%;
         margin: 0;
         padding: 0;
+      };
+
+        .modal{
+        background-color: #666666;
+
       }
  
 /*Acá empieza la interfaz*/

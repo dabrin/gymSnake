@@ -14,28 +14,7 @@
     
     <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
-        <div class="container py-2">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
-              <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
-              <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span target="_blank" class="icon-instagram"></span></a>
-            </div>
-            <div class="col-6">
-              <div class="d-flex ml-auto">
-                <a href="#" class="d-flex align-items-center ml-auto mr-4">
-                  <span class="icon-envelope mr-2"></span>
-                  <span class="d-none d-md-inline-block">gymsnake@gmail.com</span>
-                </a>
-                <a href="tel://12912830302" class="d-flex align-items-center">
-                  <span class="icon-phone mr-2"></span>
-                  <span class="d-none d-md-inline-block">+506 8888 88 88</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     
@@ -154,173 +133,80 @@
 
     <div class="block-schedule overlay site-section" style="background-image: url(public/images/7.jpeg);">
       <div class="container">
-
         <h2 class="text-white display-4 mb-5">Horario</h2>
-
         <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
-          
           <li class="nav-item">
-            <a class="nav-link active" id="pills-monday-tab" data-toggle="pill" href="#pills-monday" role="tab" aria-controls="pills-monday" aria-selected="true">Lunes</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Lunes</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-tuesday-tab" data-toggle="pill" href="#pills-tuesday" role="tab" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Martes</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-wednesday-tab" data-toggle="pill" href="#pills-wednesday" role="tab" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Miercoles</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-thursday-tab" data-toggle="pill" href="#pills-thursday" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Jueves</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-friday-tab" data-toggle="pill" href="#pills-friday" role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Viernes</button>
           </li>
-
           <!--MODIFICAR ESTE-->
           <li class="nav-item">
-            <a class="nav-link " id="pills-sunday-tab" data-toggle="pill" href="#pills-sunday" role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Sábado</button>
           </li>
-          
           <li class="nav-item">
-            <a class="nav-link " id="pills-sunday-tab" data-toggle="pill" href="#pills-sunday" role="tab" aria-controls="pills-sunday" aria-selected="true">Domingo</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Domingo</button>
           </li>
-
-
         </ul>
         <div class="tab-content" id="pills-tabContent">
+        </div>
+      </div>      
+    </div>
 
-          <!--INICIO ACÁ PARA AGREGAR LAS CLASES POR DÍA-->
+  
 
-          <!--DOMING-->
-          <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
-            <div class="row-wrap" style="width: 105%; margin-left:-30px;">             
+    
+  </div>  
+  
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+        <?php
+        $clases=array("Randall","Hector","Adolfo","Nojoda");
+
+        foreach ($clases as $val){?>
+
+      <div class="modal-body block-schedule">
+        <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
+            <div class="row-wrap">             
               <div class="row bg-white p-4 align-items-center ">
                 <div class="col-sm-2 col-md-2 col-lg-2">Boxing</div>
                 <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 8:00am &mdash; 9:00am</div>
-                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> Randall</div>
+                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $val;?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
                 <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="contact.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Incribirse</a></div>
               </div>
             </div> 
-            <!--DOMING-->      
+          <!--DOMING-->      
               
-          </div>
-
-             <!--Lunes-->
-             <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-monday-tab">  
-              <div class="row-wrap" style="width: 105%; margin-left:-30px;">             
-                <div class="row bg-white p-4 align-items-center ">
-                  <div class="col-sm-2 col-md-2 col-lg-2">Functional</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 8:00am &mdash; 9:00am</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> Randall</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="contact.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Incribirse</a></div>
-                </div>
-              </div>    
-  
-            </div>
-
-            <div class="fade show active" id="pills-monday" role="tabpanel" aria-labelledby="pills-monday-tab">  
-              <div class="row-wrap" style="width: 105%; margin-left:-30px;">             
-                <div class="row bg-white p-4 align-items-center ">
-                  <div class="col-sm-2 col-md-2 col-lg-2">Boxing</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 10:00am &mdash; 11:00am</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> Hector</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="contact.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Incribirse</a></div>
-                </div>
-              </div>    
-  
-            </div>
-
-            <div class="fade show active" id="pills-monday" role="tabpanel" aria-labelledby="pills-monday-tab">  
-              <div class="row-wrap" style="width: 105%; margin-left:-30px;">             
-                <div class="row bg-white p-4 align-items-center ">
-                  <div class="col-sm-2 col-md-2 col-lg-2">Baile</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 8:00am &mdash; 9:00am</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> Adolfo</div>
-                  <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
-                  <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="contact.html" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Incribirse</a></div>
-                </div>
-              </div>    
-  
-            </div>
-              <!--Lunes--> 
-                    <!--FIN ACÁ PARA AGREGAR LAS CLASES POR DÍA-->
-
-
-            
-            
-            
-         
-          </div>
-
-          
         </div>
-
-        
-
-      </div>      
-
+      </div>  
+      <?php }?>
       
-    </div>
-
-
-    
-    <footer class="site-footer">
-      <div class="container">
-        
-
-        <!--Inicio del about-->
-
-
-        <div class="row">
-       
-          <div class="col-lg-5">
-            <div class="row mb-5">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contáctenos </h3></div>
-              <div class="col-md-6">
-                <p>San Rafael <br> Turrialba</p>    
-              </div>
-              <div class="col-md-6">
-                Tel. + (506) 88888888 <br>
-                Mail. gymsnake@gmail.com
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Redes Sociales </h3></div>
-              <div class="col-md-12">
-                <p>
-                  <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
-              <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
-              <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span target="_blank" class="icon-instagram"></span></a>
-           
-
-                </p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-        <!--Fin del about-->
-
-
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas 
-            </p>
-          </div>
-          
-        </div>
+ 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
-    </footer>
-    
+    </div>
   </div>
-
-  
+</div>
 
   <script src="public/js/jquery-3.3.1.min.js"></script>
   <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
@@ -337,5 +223,4 @@
   <script src="public/js/main.js"></script>
     
   
-
-<!--<?php include_once 'public/footer.php';
+<!--<?php include_once 'public/footer.php';?>
