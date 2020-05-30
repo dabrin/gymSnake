@@ -1,76 +1,26 @@
 <?php include_once 'public/header.php';?>
 
-  
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
+ 
     
-     <!-- 
-    <div class="site-navbar-wrap bg-white">
-      <div class="site-navbar-top">
-        
-      </div>
-    </div>
-    -->
-    
-    <div class="site-navbar-wrap bg-white">
-      
-      <div class="container">
-        <div class="site-navbar bg-light">
-          <div class="py-1">
-            <div class="row align-items-center">
-              <div class="col-4">
-              </div>
-              <div class="col-4">
-                <h2 class="mb-0 site-logo"><a href="index.php">Gym<strong>Snake</strong>  </a></h2>
-
-              </div>
-
-              <div class="col-2">
-                <a href="#" class="d-flex align-items-center ml-auto mr-4">
-                  <span class="icon-envelope mr-2"></span>
-                  <span class="d-none d-md-inline-block">gymsnake@gmail.com</span>
-                </a>
-                </div>
-                <div class="col-2">
-                <a href="tel://12912830302" class="d-flex align-items-center">
-                  <span class="icon-phone mr-2"></span>
-                  <span class="d-none d-md-inline-block">+506 8888 88 88</span>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
   <!-- Inicio del carusel-->
+
 
     <div class="slide-one-item home-slider owl-carousel">
       
-      <div class="site-blocks-cover" style="background-image: url(public/images/4.jpeg);">
+      <div class="site-blocks-cover" style="background-image: url(public/images/3.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" >
+            <div class="col-md-7 text-center" data-aos="fade">
               <h1>Get In Shape &amp; Be <strong>Healthy</strong></h1>
             </div>
           </div>
         </div>
       </div>  
 
-      <div class="site-blocks-cover" style="background-image: url(public/images/3.jpeg);">
+      <div class="site-blocks-cover" style="background-image: url(public/images/4.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" >
+            <div class="col-md-7 text-center" data-aos="fade">
               <h1>Build Your <strong>Body</strong> Strong</h1>
             </div>
           </div>
