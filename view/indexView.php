@@ -12,11 +12,13 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
+     <!-- 
     <div class="site-navbar-wrap bg-white">
       <div class="site-navbar-top">
         <div class="container py-2">
           <div class="row align-items-center">
-            <div class="col-6">
+         
+          <div class="col-6">
               <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
               <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
               <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
@@ -38,6 +40,7 @@
         </div>
       </div>
     </div>
+    -->
     
     <div class="site-navbar-wrap bg-white">
       
@@ -47,16 +50,32 @@
             <div class="row align-items-center">
               <div class="col-4">
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <h2 class="mb-0 site-logo"><a href="index.html">Gym<strong>Snake</strong>  </a></h2>
 
               </div>
+
+              <div class="col-2">
+                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                  <span class="icon-envelope mr-2"></span>
+                  <span class="d-none d-md-inline-block">gymsnake@gmail.com</span>
+                </a>
+                </div>
+                <div class="col-2">
+                <a href="tel://12912830302" class="d-flex align-items-center">
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block">+506 8888 88 88</span>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   
+
+  <!-- Inicio del carusel-->
 
     <div class="slide-one-item home-slider owl-carousel">
       
@@ -83,9 +102,13 @@
 
     </div>
 
+      <!-- Fin del carusel-->
+
+
+  <!-- Inicio sobre nosotros-->
 
     
-    <div class="site-section">
+    <div id="SobreNosotros" class="site-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
@@ -106,9 +129,15 @@
       </div>
     </div>
 
+    <!-- Fin sobre nosotros-->
 
-    <div class="border-bottom">
+
+
+<!-- Inicio de las clases-->
+
+    <div id="Clases" class="border-bottom">
       <div class="row no-gutters">
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5 bg-light">
             <span class="d-block mb-3">
@@ -116,8 +145,10 @@
             </span>
             <h2> Crossfit</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
@@ -125,18 +156,21 @@
             </span>
             <h2> Functional</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5 bg-light">
             <span class="d-block mb-3">
               <span class="flaticon-boxing display-4"></span>
             </span>
-            
             <h2>Boxing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
@@ -147,8 +181,11 @@
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
+
       </div>
     </div> <!-- .block-feature -->
+    
+    <!-- Fin de las clases-->
 
 
 
@@ -267,7 +304,7 @@
 
     
     <footer class="site-footer">
-      <div class="container">
+      <div id=Contactenos class="container">
         
 
         <!--Inicio del about-->
