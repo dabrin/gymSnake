@@ -98,6 +98,7 @@
               <li>Nemo, voluptate? Voluptates odit, aperiam nostrum! Ipsa.</li>
               <li>Itaque voluptatum ducimus aliquam, est fuga molestiae?</li>
               <li>Accusamus porro at commodi delectus, nesciunt molestiae.</li>
+              
             </ul>
           </div>
           <div class="col-md-12 col-lg-6 ml-auto">
@@ -122,7 +123,12 @@
               <span class="flaticon-weightlifter display-4"></span>
             </span>
             <h2> Crossfit</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <p>Crossfit se define como un sistema de entrenamiento de fuerza y acondicionamiento, basado en ejercicios funcionales
+              constantemente variados y realizados a una alta intensidad.
+            </p>
+            <br>
+            <br>
+            <br>
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
@@ -133,7 +139,13 @@
               <span class="flaticon-woman display-4"></span>
             </span>
             <h2> Functional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <p>
+              Functional es un entrenamiento personal muy efectivo, en el que se adaptan los ejercicios a las necesidades personales
+              orientado a mejorar las funciones diarias y a aumentar la calidad de vida de quienes lo practican.
+            </p>
+            <br>
+            <br>
+            
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
@@ -143,8 +155,13 @@
             <span class="d-block mb-3">
               <span class="flaticon-boxing display-4"></span>
             </span>
-            <h2>Boxing</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <h2>Functional Boxing</h2>
+            <p>
+              Functional Boxing es una clase que combina acondicionamiento físico de alto nivel con boxeo. Alternando los entrenamientos
+              clase tras clase, en esta clase aprenderás lo básico sobre el boxeo y sus técnicas más especiales.
+            </p>
+            <br>
+            <br>
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
@@ -155,7 +172,13 @@
               <span class="flaticon-dance display-4"></span>
             </span>
             <h2>Baile</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat iure eveniet perferendis odit est.</p>
+            <p>
+              El baile, suele consistir en el seguimiento de una serie de rutinas 
+              y pasos de baile que hacen que aumente la frecuencia de las pulsaciones cardiacas.
+              Este deporte pone en movimiento todo el cuerpo y 
+              mejora la flexibilidad, la coordinación y el ritmo.
+            </p>
+            <br>
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>
@@ -296,4 +319,48 @@
   <script src="public/js/main.js"></script>
     
   
-<!--<?php include_once 'public/footer.php';?>
+  <div class="">
+<footer class="site-footer">
+      <div  class="container">
+        <div class="row">
+       
+          <div id=Contactenos class="col-lg-5">
+            <div class="row mb-5">
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contáctenos </h3></div>
+              <div class="col-md-6">
+                <p>San Rafael <br> Turrialba</p>    
+              </div>
+              <div class="col-md-6">
+                Tel. + (506) 88888888 <br>
+                Mail. gymsnake@gmail.com
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Redes Sociales </h3></div>
+              <div class="col-md-12">
+                <p>
+                  <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
+              <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
+              <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span target="_blank" class="icon-instagram"></span></a>
+           
+
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas and Dabrin Nájera 
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    </div>
+</body>

@@ -1,7 +1,7 @@
+<!--
 <div class="">
 <footer class="site-footer">
       <div  class="container">
-        <!--Inicio del about-->
         <div class="row">
        
           <div id=Contactenos class="col-lg-5">
@@ -45,3 +45,4 @@
     </div>
 </body>
 </html>
+-->
