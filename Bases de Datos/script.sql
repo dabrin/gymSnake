@@ -19,6 +19,7 @@ nombre varchar(300) not null,
 telefono varchar(8) not null
 );
 
+
 create table tipo_clase(
 id_tipo_clase int not null auto_increment primary key,
 nombre_tipo_clase varchar(300) not null,

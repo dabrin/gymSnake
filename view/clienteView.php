@@ -97,6 +97,19 @@
 
     <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
+    <script src="public/js/jquery-3.3.1.min.js"></script>
+    <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="public/js/jquery-ui.js"></script>
+    <script src="public/js/popper.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="public/js/jquery.stellar.min.js"></script>
+    <script src="public/js/jquery.countdown.min.js"></script>
+    <script src="public/js/jquery.magnific-popup.min.js"></script>
+    <script src="public/js/bootstrap-datepicker.min.js"></script>
+  <script src="public/js/aos.js"></script>
+
+  <script src="public/js/main.js"></script>
 
     <footer class="site-footer">
       <div class="container">
@@ -148,17 +161,4 @@
   </div>
 
   
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
-
-  <script src="js/main.js"></script>
+</body>
