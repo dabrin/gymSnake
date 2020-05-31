@@ -106,23 +106,31 @@
           
             
           
-            <form action="#" class="p-5 bg-white">
+            <form action="#" class="p-5 bg-white" name="frmSO">
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="fullname">Nombre Completo</label>
+                  <label class="font-weight-bold" for="fullname" id="nombre">Nombre Completo</label>
                   <input type="text" id="fullname" class="form-control" placeholder="Nombre Completo" required>
-                </div>
+                </div> 
               </div>
 
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="phone">Número de Teléfono</label>
+                  <label class="font-weight-bold" for="phone" id="telefono">Número de Teléfono</label>
                   <input type="text" id="phone" class="form-control" placeholder="Número de Teléfono">
                 </div>
               </div>
-
+<!--
+              <label class="font-weight-bold" for="fullname">¿Es cliente activo del Gym Snake?</label>
+              <div class="radio">
+              <label><input type="radio" name="type" value="Sí" id="Si"> Sí</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="type" value="No" id="No"> No</label>
+            </div>
+-->
 
               <div class="row form-group">
                 <div class="col-md-12">
@@ -138,26 +146,26 @@
          
         </div>
         <table class="table table-hover table-sm" id=listado>
-          <thead>
             <tr>
-            <!--  <th scope="col">#</th>-->
               <th scope="col">Nombre Completo</th>
               <th scope="col">Teléfono</th>
             </tr>
-          </thead>
-          <tbody>
+
+            <?php
+               foreach ($vars['listado'] as $item) {
+            ?>
+
             <tr>
-         <!--     <th scope="row">1</th>-->
-              <td>Mark</td>
-              <td>12345678</td>
+
+              <td> <?php echo $item[0]; ?> </td>
+              <td> <?php echo $item[1]; ?> </td>
+              
             </tr>
-            <tr>
-           <!--   <th scope="row">2</th>-->
-              <td>Jacob</td>
-              <td>98765432</td>
-            </tr>
+
+            <?php
+               }
+            ?>
            
-          </tbody>
         </table>
       </div>
       
@@ -237,7 +245,7 @@
 </html>
 
 
-
+<!--
 
 <script>
   document.querySelector("input[id=agregar]").addEventListener("click",function(e){
@@ -245,6 +253,7 @@
 
     const nombre=document.querySelector("input[id=fullname]");
     const telefono=document.querySelector("input[id=phone]");
+    
 
     if(!nombre.value)
     {
@@ -302,3 +311,4 @@
   });
   </script>
   
+-->
