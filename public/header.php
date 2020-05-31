@@ -62,7 +62,7 @@
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.html">Gym<strong>Snake</strong>  </a></h2>
+                <h2 class="mb-0 site-logo"><a href="?controller=index&action=defaultAction">Gym<strong>Snake</strong>  </a></h2>
               </div>
 
               

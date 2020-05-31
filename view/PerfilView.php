@@ -1,6 +1,8 @@
 <?php include_once 'public/header.php';?>
 
-<div class="container-sm">
+<div class="alert alert-info" role="alert"><p center>Bienvenido!</p></div>
+
+<!--<div class="container-sm">
     <div class="row justify-content-center">
         <div class="col-sm-12" style="max-width: 600px">
             <div class="card card-body justify-content-center">
@@ -20,9 +22,7 @@
                         <h5>Aspectos favoritos</h5>
                         <p>Por favor, seleccione las características 
                             de sus lugares favoritos</p>
-                        <div class="alert alert-info" role="alert">
-                            Este apartado es opcional.
-                        </div>
+                        
                     </div>
                     <div class="form-group">
                         <label for="place">Ubicación</label>
@@ -96,5 +96,5 @@
         </div>
     </div>
 </div>
-
+-->
 <!--<?php include_once 'public/footer.php';

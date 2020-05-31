@@ -11,4 +11,9 @@ class RegisterController{
     function notFound() {
         $this->view->show("notFoundView.php");
     }
+
+    function contactView(){
+
+        $this->view->show("contactView.php");
+    }
 }

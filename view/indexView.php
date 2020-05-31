@@ -1,10 +1,9 @@
 <?php include_once 'public/header.php';?>
 
- 
     
   <!-- Inicio del carusel-->
 
-
+  
     <div class="slide-one-item home-slider owl-carousel">
       
       <div class="site-blocks-cover" style="background-image: url(public/images/3.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -137,40 +136,6 @@
       </div>
     </div> <!-- .block-feature -->
     
-    <!-- Fin de las clases-->
-
-<!--block-schedule p-5  overlay--> <!-- 
-    <div class="block-schedule overlay site-section" style="background-image: url(public/images/7.jpeg);">
-      <div class="container">
-        <h2 class="text-white display-4 mb-5">Horario de Sala de Pesas</h2>
-        <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Lunes</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Martes</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Miercoles</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Jueves</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Viernes</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Sábado</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" style="margin-left: 1em" data-target="#myModal">Domingo</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-        </div>
-      </div>      
-    </div>
-    -->
 
 
     
@@ -225,19 +190,17 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <?php
-        $clases=array("Randall","Hector","Adolfo","Nojoda");
-
-        foreach ($clases as $val){?>
+        foreach ($vars['listClases'] as $item){?>
 
       <div class="modal-body block-schedule">
         <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
             <div class="row-wrap">             
               <div class="row bg-white p-4 align-items-center ">
-                <div class="col-sm-2 col-md-2 col-lg-2">Boxing</div>
-                <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> 8:00am &mdash; 9:00am</div>
-                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $val;?></div>
-                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> Cupos: 20</div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="public/contact.php" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Inscribirse</a></div>
+                <div class="col-sm-2 col-md-2 col-lg-2"><?php echo $item[8]; ?></div>
+                <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
+                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $item[5];?></div>
+                <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> <?php echo $item[6];?></div>
+                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="?controller=Cliente&action=clienteView" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Inscribirse</a></div>
               </div>
             </div> 
           <!--DOMING-->      

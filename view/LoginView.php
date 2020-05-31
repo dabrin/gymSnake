@@ -5,19 +5,19 @@
         <div class="col-sm-12" style="max-width: 600px">
             <div class="card card-body justify-content-center">
                 <h2>Login</h2>
-                <form>
+                <form action="?controller=Login&action=login" method="POST">
                     <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" 
+                        <label for="text">Correo electrónico</label>
+                        <input type="text" class="form-control" name="user"id="user" 
                                placeholder="Escriba su correo">
                     </div>
                     <div class="form-group">
                         <label for="pass">Contraseña</label>
-                        <input type="password" class="form-control" id="pass" 
+                        <input type="password" class="form-control" name="pass"id="pass" 
                                placeholder="Escriba su contraseña">
                     </div>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                    <div><a href="?controller=Register&action=defaultAction">Registrarse</a></div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div><a href="">Registrarse</a></div>
                 </form>
             </div>
         </div>

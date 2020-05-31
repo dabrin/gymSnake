@@ -7,7 +7,12 @@ class IndexController {
     }
 
     function defaultAction() {
-        $this->view->show("indexView.php");
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel();
+        $data['listClases'] = $items->get_clases();
+        
+        $this->view->show("indexView.php",$data);
+
     }
     
     function notFound() {
