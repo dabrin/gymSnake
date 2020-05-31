@@ -15,8 +15,15 @@
     <link rel="stylesheet" href="public/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <link rel="icon" type="image/png" href="public/images/logo.ico"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+
     
     
     <link rel="stylesheet" href="public/fonts/flaticon/font/flaticon.css">

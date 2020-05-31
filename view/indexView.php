@@ -197,10 +197,10 @@
             <div class="row-wrap">             
               <div class="row bg-white p-4 align-items-center ">
                 <div class="col-sm-2 col-md-2 col-lg-2"><?php echo $item[8]; ?></div>
-                <div class="col-sm-3 col-md-3 col-lg-3"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
+                <div class="col-sm-4 col-md-4 col-lg-4"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $item[5];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> <?php echo $item[6];?></div>
-                <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="?controller=Cliente&action=clienteView" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-user-edit"></i></span> Inscribirse</a></div>
+                <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><a href="?controller=Cliente&action=clienteView" class="btn btn-primary pill px-4 mt-3 mt-md-0">Inscribirse</a></div>
               </div>
             </div> 
           <!--DOMING-->      

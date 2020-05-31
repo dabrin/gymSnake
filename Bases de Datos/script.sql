@@ -25,16 +25,25 @@ nombre_tipo_clase varchar(300) not null,
 descripcion varchar(500)
 );
 
+insert into tipo_clase (nombre_tipo_clase,descripcion)
+values ('Functional','Clase de functional');
+select * from tipo_clase;
+
 create table clase(
 id_clase int auto_increment primary key,
 id_tipo_clase int not null,
 fecha date,
-hora_ini datetime,
-hora_fin datetime,
+hora_ini varchar(100),
+hora_fin varchar(100),
 instructor varchar(500),
 cupos int,
 constraint foreign key(id_tipo_clase)references tipo_clase(id_tipo_clase)
 );
+
+select * from clase;
+insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
+values (2,sysdate(),'5:00 pm','6:00 pm','Randall',20);
+
 
 create table comprobante(
 id_comprobante int auto_increment primary key,

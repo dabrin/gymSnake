@@ -2,38 +2,15 @@
 
   <div class="site-wrap">
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    
-    
-    </div>
-
-       
-  
-
-    <div class="site-blocks-cover inner-page overlay" style="background-image: url(public/images/about.jpeg);" >
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-7 text-center">
-            <h1 class="mb-5">Inscribete en la clase</h1>
-          </div>
-        </div>
-      </div>
-    </div>  
-
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
        
           <div class="col-md-12 col-lg-8 mb-5">
           
-            
+            <h3>¡Ingresá tus datos, da click sobre el botón <b>Inscribirse</b> y tu espacio quedará reservado!
+            <img src="https://img.icons8.com/fluent/48/000000/ok.png"/>
+          </h3>
           
             <form action="?controller=Cliente&action=clienteRegister" class="p-5 bg-white" method="POST">
               <input hidden type="text" name="id_clase" id="id_clase" class="form-control" value="7" required>
@@ -55,7 +32,11 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="agregar" value="Inscribirse" >
+                  <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn" value="Inscribirse" >
+
+
+                  <button id="btn1">Básico</button>
+
                    
                 </div>
               </div>
@@ -97,6 +78,13 @@
 
     <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
     <script src="public/js/jquery-3.3.1.min.js"></script>
     <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="public/js/jquery-ui.js"></script>
@@ -162,3 +150,47 @@
 
   
 </body>
+
+
+<script>
+ $("#btn1").click(function(){
+ 
+
+  Swal.fire({
+  title: 'Está seguro que desea inscribirse a esta clase?',
+  text: "En caso de querer cancelar su inscripción después de confirmada, debe de comunicarse al gimnasio!",
+  icon: 'warning',
+  showCancelButton: true,
+  cancelButtonText: 'No',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Sí, inscribirme!'
+}).then((result) => {
+  if (result.value) {
+    Swal.fire(
+      'Inscrito!',
+      'Lo estaremos esperando :)',
+      'success'
+    )
+  }
+
+  else if (
+    /* Read more about handling dismissals below */
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+    Swal.fire(
+      'Cancelado!',
+      'Su inscripción no se ha realizado :(',
+      'error'
+    )
+  }
+
+
+})
+  
+
+ });
+  
+</script>
+
+
