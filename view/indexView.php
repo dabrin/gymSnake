@@ -200,10 +200,10 @@
                 <div class="col-sm-4 col-md-4 col-lg-4"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $item[5];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> <?php echo $item[6];?></div>
-                <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><a href="?controller=Cliente&action=clienteView" class="btn btn-primary pill px-4 mt-3 mt-md-0">Inscribirse</a></div>
+                <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><a class="btn btn-primary pill px-4 mt-3 mt-md-0" onclick="verRegistro('<?php echo $item[0]?>')">Inscribirse</a></div>
               </div>
             </div> 
-          <!--DOMING-->      
+          <!-- href="?controller=Cliente&action=clienteView" DOMING-->      
               
         </div>
       </div>  
@@ -277,3 +277,25 @@
     </footer>
     </div>
 </body>
+
+<script>
+  function verRegistro(id_clase){
+    var param={
+      'id_clase':id_clase
+
+    };
+
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Cliente&action=data_clientView',
+            type: 'POST',
+            success:function(resp){
+              $('#id_clase').val(param['id_clase']);
+              location.href = "?controller=Cliente&action=clienteView";
+            }
+        } );
+
+  }
+
+</script>

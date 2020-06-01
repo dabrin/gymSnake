@@ -13,6 +13,11 @@ class ClienteController {
         $this->view->show("notFoundView.php");
     }
 
+    function data_clientView(){
+        
+        $_SESSION['id_clase']=$_POST['id_clase'];
+
+    }
     function clienteView(){
         require 'model/ClienteModel.php';
         $items = new ClienteModel();

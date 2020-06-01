@@ -13,7 +13,7 @@
           </h3>
           
             <form action="?controller=Cliente&action=clienteRegister" class="p-5 bg-white" method="POST">
-              <input hidden type="text" name="id_clase" id="id_clase" class="form-control" value="7" required>
+              <input  hidden type="text" name="id_clase" id="id_clase" class="form-control" value="<?php echo $_SESSION['id_clase'] ?>" required>
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="fullname">Nombre Completo</label>
@@ -154,7 +154,12 @@
 
 <script>
  $("#btn1").click(function(){
- 
+ var param={
+'id_clase':$('id_clase').val()
+,'nombre':$('nombre').val()
+,'telefono':$('telefono').val()
+
+ }
 
   Swal.fire({
   title: 'Está seguro que desea inscribirse a esta clase?',
@@ -165,14 +170,27 @@
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
   confirmButtonText: 'Sí, inscribirme!'
-}).then((result) => {
+}).then(function(result){
   if (result.value) {
-    Swal.fire(
-      'Inscrito!',
-      'Lo estaremos esperando :)',
-      'success'
-    )
-  }
+    $.ajax(
+      {
+        data:param,
+        url:'?controller=Cliente&action=clienteRegister',
+        type:'POST',
+        success:function(response){
+          Swal.fire({
+            type:'success',
+            html:'Inscrito!' + 'Lo estaremos esperando :)'
+            
+          }
+            
+          );
+        }
+      }
+    );
+    
+    
+  } 
 
   else if (
     /* Read more about handling dismissals below */
@@ -192,5 +210,3 @@
  });
   
 </script>
-
-

@@ -9,8 +9,8 @@ class ClienteModel {
 
 
     public function get_clients(){
-
-        $consulta = $this->db->prepare('call sp_listar_persona_clase()');
+        $id_clase = $_SESSION["id_clase"];
+        $consulta = $this->db->prepare("call sp_listar_persona_clase('".$id_clase."')");
         $consulta->execute();
         $resulado = $consulta->fetchAll();
         $consulta->CloseCursor();
