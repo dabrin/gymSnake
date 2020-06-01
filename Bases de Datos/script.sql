@@ -25,10 +25,6 @@ nombre_tipo_clase varchar(300) not null,
 descripcion varchar(500)
 );
 
-insert into tipo_clase (nombre_tipo_clase,descripcion)
-values ('Functional','Clase de functional');
-select * from tipo_clase;
-
 create table clase(
 id_clase int auto_increment primary key,
 id_tipo_clase int not null,
@@ -39,10 +35,6 @@ instructor varchar(500),
 cupos int,
 constraint foreign key(id_tipo_clase)references tipo_clase(id_tipo_clase)
 );
-
-select * from clase;
-insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
-values (2,sysdate(),'5:00 pm','6:00 pm','Randall',20);
 
 
 create table comprobante(
@@ -140,8 +132,40 @@ DELIMITER ;
 -- ------------------------------- PROCEDIMIENTOS ALMACENADOS -------------------------------
 
 
+-- ------------------------------- TRIGGER -------------------------------
+
+DELIMITER $$
+
+CREATE TRIGGER restar_cupos_clase AFTER INSERT ON persona
+FOR EACH ROW
+Update clase set cupos = cupos -1
+
+DELIMITER ;
+ 
+
+DROP TRIGGER restar_cupos_clase;
+
+-- ------------------------------- TRIGGER -------------------------------
 
 
+
+
+SELECT * FROM persona;
+
+Insert into persona (nombre,telefono) values ('PruebaCupos','987621');
+
+insert into tipo_clase (nombre_tipo_clase,descripcion)
+values ('Functional','Clase de functional');
+select * from tipo_clase;
+
+
+select * from clase;
+insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
+values (2,sysdate(),'5:00 pm','6:00 pm','Randall',20);
+
+call sp_listar_clases;
+select * from persona_pesas; 
+select * from persona_clase; 
 
 
 
