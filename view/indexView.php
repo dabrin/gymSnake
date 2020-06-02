@@ -78,7 +78,9 @@
             <br>
             <br>
             <br>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+       <!--     <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0" data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div> -->
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="public/horarioClases.html" class="btn btn-primary pill px-4 mt-3 mt-md-0" ><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+
           </div>
         </div>
 
@@ -127,7 +129,9 @@
               la mejor manera. Contamos con área para Spinning y Abdomen.
             </p>
             <br>
-            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+         <!--   <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div> -->
+         <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="public/horarioPesas.html" class="btn btn-primary pill px-4 mt-3 mt-md-0" ><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
+
           </div>
         </div>
         
