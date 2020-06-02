@@ -168,7 +168,7 @@ function clear(){
   ,telefono: $('#telefono').val()
  }
   Swal.fire({
-  title: 'Está seguro que desea inscribirse a esta clase?',
+  title: '¿Está seguro que desea inscribirse en esta clase?',
   text: "En caso de querer cancelar su inscripción después de confirmada, debe de comunicarse al gimnasio!",
   icon: 'warning',
   showCancelButton: true,

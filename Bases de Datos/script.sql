@@ -129,6 +129,36 @@ END
 DELIMITER ;
 
 
+-- SP para insertar los clientes
+DELIMITER $$
+CREATE DEFINER=`laboratorios`@`%` PROCEDURE `sp_ingresar_clientes`(nombre_ varchar(100), telefono_ varchar(8), id_clase_ int)
+BEGIN
+	INSERT INTO persona (nombre,telefono)
+    values (nombre_,telefono_);
+    
+    INSERT INTO persona_clase (id_persona , id_clase)
+    values(LAST_INSERT_ID(),id_clase_);
+	
+    UPDATE clase
+	SET cupos = cupos-1
+	WHERE id_clase_=clase.id_clase;
+
+    
+END
+
+DELIMITER ;
+
+
+-- SP listar las personas de cada clase
+DELIMITER $$
+CREATE DEFINER=`laboratorios`@`%` PROCEDURE `sp_listar_persona_clase`(id_clase_ int)
+BEGIN
+select nombre,telefono from persona join persona_clase on persona.id_persona= persona_clase.id_persona 
+where id_clase_ = persona_clase.id_clase;
+END
+DELIMITER ;
+
+
 -- ------------------------------- PROCEDIMIENTOS ALMACENADOS -------------------------------
 
 
@@ -160,11 +190,16 @@ select * from tipo_clase;
 
 
 select * from clase;
+
+update clase 
+set cupos=20
+where id_clase=8;
+
 insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
 values (2,sysdate(),'5:00 pm','6:00 pm','Randall',20);
 
 call sp_listar_clases;
-select * from persona_pesas; 
+select * from persona; 
 select * from persona_clase; 
 
 
