@@ -32,11 +32,11 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn" value="Inscribirse" >
+                  <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn1" value="Inscribirse" >
 
 
-                  <button id="btn1">Básico</button>
-
+                  <!--<button id="btn1">Básico</button>
+-->
                    
                 </div>
               </div>
@@ -153,14 +153,20 @@
 
 
 <script>
- $("#btn1").click(function(){
- var param={
-'id_clase':$('id_clase').val()
-,'nombre':$('nombre').val()
-,'telefono':$('telefono').val()
 
+
+function clear(){
+  $('#nombre').val('');
+  $('#telefono').val('');
+
+}
+ $("#btn1").click(function(e){
+   e.preventDefault();
+   var param={
+  id_clase: $('#id_clase').val()
+  ,nombre: $('#nombre').val()
+  ,telefono: $('#telefono').val()
  }
-
   Swal.fire({
   title: 'Está seguro que desea inscribirse a esta clase?',
   text: "En caso de querer cancelar su inscripción después de confirmada, debe de comunicarse al gimnasio!",
@@ -171,6 +177,7 @@
   cancelButtonColor: '#d33',
   confirmButtonText: 'Sí, inscribirme!'
 }).then(function(result){
+  
   if (result.value) {
     $.ajax(
       {
@@ -179,19 +186,17 @@
         type:'POST',
         success:function(response){
           Swal.fire({
-            type:'success',
-            html:'Inscrito!' + 'Lo estaremos esperando :)'
-            
+           html:'Inscrito!<br>' + 'Lo estaremos esperando :)',
+           type:'success',
+           icon:'success'
           }
-            
           );
+          $("#listado").load(location.href + " #listado");
+          clear();
         }
       }
     );
-    
-    
   } 
-
   else if (
     /* Read more about handling dismissals below */
     result.dismiss === Swal.DismissReason.cancel
@@ -202,11 +207,10 @@
       'error'
     )
   }
-
-
+  
 })
   
 
  });
-  
+  // 
 </script>

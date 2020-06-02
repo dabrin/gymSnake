@@ -165,7 +165,7 @@
             <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
           </li>  
           <li class="nav-item">
-            <a class=" btn btn-primary " id="pills-sunday-tab" style="margin-left: 0.5em"data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-sunday" aria-selected="true">Domingo</a>
+            <a class=" btn btn-primary " id="pills-sunday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-sunday" aria-selected="true">Domingo</a>
           </li>
 
 
@@ -186,7 +186,28 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <br>
+        <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
+          
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " data-toggle="modal" data-target="#myModal" href="#pills-monday" role="tab" aria-controls="pills-monday" aria-selected="true">Lunes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-tuesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-tuesday" role="tab" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-wednesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-wednesday" role="tab" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-thursday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-thursday" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-friday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-friday" role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
+          </li>  
+        </ul>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <?php
@@ -208,6 +229,28 @@
         </div>
       </div>  
       <?php }?>
+      
+ 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        
+        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#nojoda" >NJD</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal" id="nojoda">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
       
  
       <div class="modal-footer">
