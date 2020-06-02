@@ -85,7 +85,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
-              <span class="flaticon-woman display-4"></span>
+              <span class="flaticon-exercise display-4"></span>
             </span>
             <h2> Functional</h2>
             <p>
@@ -118,14 +118,13 @@
         <div class="col-md-6 col-lg-3">
           <div class="w-100 h-100 block-feature p-5">
             <span class="d-block mb-3">
-              <span class="flaticon-dance display-4"></span>
+              <span class="flaticon-woman display-4"></span>
             </span>
-            <h2>Baile</h2>
+            <h2>Sala de Pesas</h2>
             <p>
-              El baile, suele consistir en el seguimiento de una serie de rutinas 
-              y pasos de baile que hacen que aumente la frecuencia de las pulsaciones cardiacas.
-              Este deporte pone en movimiento todo el cuerpo y 
-              mejora la flexibilidad, la coordinación y el ritmo.
+              En esta sección podrá seleccionar el horario en el que desea reservar su espacio. En nuestra
+              sala de pesas contamos con gran cantidad de máquinas y equipo para que pueda realizar sus ejercicios de 
+              la mejor manera. Contamos con área para Spinning y Abdomen.
             </p>
             <br>
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="#" class="btn btn-primary pill px-4 mt-3 mt-md-0"  data-toggle="modal" data-target="#myModal"><span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
@@ -137,7 +136,7 @@
     </div> <!-- .block-feature -->
     
 
-
+<!--
     
     <div id="Pesas" class="block-schedule overlay site-section" style="background-image: url(public/images/gym3.jpg);">
       <div class="container">
@@ -175,7 +174,7 @@
    </div>  
 
   
-
+-->
     
   </div>  
   
