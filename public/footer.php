@@ -59,7 +59,7 @@
 
              
 
-              <div class="col-md-4">
+              <div class="col-md-6">
               <a href="https://www.instagram.com/coach_randallbarboza/" target="_blank"><span style="color: red;"><i class="fas fa-dumbbell"></i></span>  Randall Barboza</a><br>
               <a href="tel://+50688177225" > <span style="color: green;"><i class="fas fa-phone"></i></span> (+506) 88177225 <br></a>
               <a href="https://api.whatsapp.com/send?phone=50688177225" target="_blank"><span style="color: green;"><i class="icon-whatsapp"></i></span> Mensajes <br></a>
@@ -67,15 +67,17 @@
                 
               </div>
              
-              <div class="col-md-4">
+              <div class="col-md-6">
               <a href="https://www.instagram.com/hector_jimenez_monge/" target="_blank"><span style="color: red;"><i class="fas fa-dumbbell"></i></span>  Héctor Jimenez</a><br>
               <a href="tel://+50688901565"> <span style="color: green;" target="_blank"><i class="fas fa-phone"></i></span> (+506) 88901565 <br></a>
               <a href="https://api.whatsapp.com/send?phone=50688901565" target="_blank"><span style="color: green;"><i class="icon-whatsapp"></i></span> Mensajes <br></a>
               <a href="mailto:fe.gymsnake@gmail.com" target="_blank"><span style="color: darkgoldenrod;"><i class="fas fa-envelope"></i></span> fe.gymsnake@gmail.com</a><br><br>
               </div>
 
+              <!--
+
               <div class="col-md-4">
-              <h6 class="">Redes Sociales</h6>
+              <h6 class=""><strong>Redes Sociales</h6>
               <p>
               <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span style="color: blue;" class="icon-facebook"></span></a>
               <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span style="color: coral;" class="icon-instagram"></span></a>
@@ -83,7 +85,18 @@
                 </p>
               </div>
 
+-->
+            </div>
 
+            <div id=Contactenos class="col-lg-12">
+            <div class="row mb-5">
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Redes Sociales   <span style="color: red;"><i class="icon-users"></i></span> </h3></div>
+              <p>
+              <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span style="color: blue;" class="icon-facebook"></span></a>
+              <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span style="color: coral;" class="icon-instagram"></span></a>
+      
+                </p>
+            </div>
             </div>
 
             <div class="row">
