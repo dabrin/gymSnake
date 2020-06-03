@@ -38,9 +38,13 @@
         </div>
       </div>  
       <?php }?>
-      
-    <div class="col-sm-3 col-md-3 col-lg-3 text-md-right"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
+      <br><br>
+      
+    <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
+
+    <br><br>
+    <br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="sweetalert2.all.min.js"></script>
@@ -61,45 +65,8 @@
     <script src="public/js/aos.js"></script>
 
   <script src="public/js/main.js"></script>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="row mb-5">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contáctenos </h3></div>
-              <div class="col-md-6">
-                <p>San Rafael <br> Turrialba</p>    
-              </div>
-              <div class="col-md-6">
-                Tel. + (506) 88888888 <br>
-                Mail. gymsnake@gmail.com
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Redes Sociales </h3></div>
-              <div class="col-md-12">
-                <p>
-                  <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-twitter"></span></a>
-              <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2 pl-0"><span target="_blank" class="icon-linkedin"></span></a>
-              <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span target="_blank" class="icon-instagram"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            Copyright &copy;</script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This web page is made by Pablo Rojas 
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+
+
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -137,3 +104,5 @@
     </div>
   </div>
 <script src="public/js/script.js"></script>
+
+<?php include_once 'public/footer.php';?>

@@ -78,6 +78,7 @@
   <script src="public/js/bootstrap-datepicker.min.js"></script>
   <script src="public/js/aos.js"></script>
   <script src="public/js/main.js"></script>
-</body>
 <script src="public/js/script.js"></script>
 
+
+<?php include_once 'public/footer.php';?>
