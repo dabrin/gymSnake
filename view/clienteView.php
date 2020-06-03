@@ -78,7 +78,7 @@
         <div class="modal-body block-schedule">
         <form class="p-5 bg-white" >
           <div class="row form-group">
-            <input type="text" name="id_clase" id="id_clase" class="form-control" placeholder="id_clase" required>
+            <input hidden type="text" name="id_clase" id="id_clase" class="form-control" placeholder="id_clase" required>
             <div class="col-md-12 mb-3 mb-md-0">
               <label class="font-weight-bold" for="fullname">Nombre Completo</label>
               <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Completo" required>
@@ -87,7 +87,7 @@
           <div class="row form-group">
             <div class="col-md-12 mb-3 mb-md-0">
               <label class="font-weight-bold" for="phone">Número de Teléfono</label>
-              <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Número de Teléfono">
+              <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Número de Teléfono">
             </div>
           </div>
           <div class="row form-group">
@@ -98,7 +98,7 @@
         </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" style="background-color: red; color: aliceblue;" class="btn" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
