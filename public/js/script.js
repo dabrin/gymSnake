@@ -40,6 +40,8 @@ $("#btn1").click(function (e) {
                         );
                         $("#listado").load(location.href + " #listado");
                         clear();
+                        $("#myModal").modal().hide();
+                        $('.modal-backdrop').remove();
                     }
                 }
             );
