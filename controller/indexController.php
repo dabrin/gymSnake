@@ -9,8 +9,9 @@ class IndexController {
     function defaultAction() {
         require 'model/ClaseModel.php';
         $items = new ClaseModel();
-        $data['listClases'] = $items->get_clases();
         
+        
+        $data['listTipoClases'] = $items->get_tipo_clases();
         $this->view->show("indexView.php",$data);
 
     }

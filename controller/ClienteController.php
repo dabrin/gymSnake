@@ -14,14 +14,15 @@ class ClienteController {
     }
 
     function data_clientView(){
-        
         $_SESSION['id_clase']=$_POST['id_clase'];
+       
 
     }
     function clienteView(){
-        require 'model/ClienteModel.php';
-        $items = new ClienteModel();
-        $data['listRegisterClient'] = $items->get_clients();
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel();
+        
+        $data['listClases'] = $items->get_clases();
         $this->view->show("clienteView.php",$data);
     }
 
