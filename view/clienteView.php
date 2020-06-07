@@ -32,7 +32,15 @@
                 <div class="col-sm-4 col-md-4 col-lg-4"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $item[5];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> <?php echo $item[6];?></div>
-                <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><a class="btn btn-primary pill px-4 mt-3 mt-md-0"  onclick="add_idClase(<?php echo $item[0]?>)" data-toggle="modal" data-target="#myModal">Inscribirse</a></div>
+               
+               <?php 
+                  if($item[6]==0){ 
+                    ?>
+                     <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><button class="btn btn-primary pill px-4 mt-3 mt-md-0" style="background-color: tomato; color: aliceblue; border-color: tomato;" disabled="disabled" onclick="" data-toggle="modal" data-target="#myModal">Sin Cupos   </button></div>
+                    <?php }
+                    else { ?>
+                <div class="col-sm-2 col-md-2 col-lg-2 text-md-right"><button class="btn btn-primary pill px-4 mt-3 mt-md-0"  onclick="add_idClase(<?php echo $item[0]?>)" data-toggle="modal" data-target="#myModal">Inscribirse</button></div>
+                <?php }?>
               </div>
             </div> 
         </div>
@@ -76,7 +84,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body block-schedule">
-        <form class="p-5 bg-white" >
+        <form id="newAccount" class="p-5 bg-white" >
           <div class="row form-group">
             <input hidden type="text" name="id_clase" id="id_clase" class="form-control" placeholder="id_clase" required>
             <div class="col-md-12 mb-3 mb-md-0">
@@ -87,7 +95,7 @@
           <div class="row form-group">
             <div class="col-md-12 mb-3 mb-md-0">
               <label class="font-weight-bold" for="phone">Número de Teléfono</label>
-              <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Número de Teléfono">
+              <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Número de Teléfono" required>
             </div>
           </div>
           <div class="row form-group">
@@ -100,9 +108,17 @@
         <div class="modal-footer">
           <button type="button" style="background-color: red; color: aliceblue;" class="btn" data-dismiss="modal">Cerrar</button>
         </div>
+
+        <style>
+          .error{
+            color: red;
+          }
+        </style>
+
       </div>
     </div>
   </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 <script src="public/js/script.js"></script>
 
 <?php include_once 'public/footer.php';?>

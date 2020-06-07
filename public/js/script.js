@@ -7,6 +7,47 @@ function clear() {
 function add_idClase(id_clase) {
     $('#id_clase').val(id_clase);
 }
+
+
+
+    $(document).ready(function () {
+    $('#newAccount').validate({
+        rules: {
+            nombre: {
+                required: true,
+                minlength: 10,
+		        maxlength: 200
+            },
+            telefono: {
+                required: true,
+                minlength: 8,
+                maxlength: 8
+            }
+        },
+        messages: {
+            nombre: {
+                required: "Debe ingresar su nombre completo",
+                minlength: "Debe incluir al menos un nombre y un apellido"
+
+            },
+            telefono: {
+                required: "Revise que su número de teléfono sea el correcto",
+                minlength: "Su número de teléfono debe tener mínimo 8 dígitos",
+                maxlength: "Su número de teléfono debe tener máximo 8 dígitos"
+            }
+        },
+        submitHandler: function (form) {
+            $("#btn1");
+        }
+    });
+});
+
+
+
+
+
+
+
 $("#btn1").click(function (e) {
     e.preventDefault();
     var param = {
@@ -14,6 +55,7 @@ $("#btn1").click(function (e) {
         , nombre: $('#nombre').val()
         , telefono: $('#telefono').val()
     }
+    
     Swal.fire({
         title: '¿Está seguro que desea inscribirse en esta clase?',
         text: "En caso de querer cancelar su inscripción después de confirmada, debe de comunicarse al gimnasio!",
