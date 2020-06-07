@@ -28,6 +28,15 @@ descripcion varchar(500)
 
 alter table tipo_clase
   add icono varchar(200) not null;
+  
+
+create table tips_entrenamiento (
+id_tips_entrenamiento int not null auto_increment primary key,
+imagen varchar(300),
+titulo varchar(300) not null,
+descripcion varchar(1000)
+);
+
 
 create table clase(
 id_clase int auto_increment primary key,
@@ -249,8 +258,8 @@ where id_tipo_clase = 2;
 select * from clase;
 
 update clase 
-set cupos=20
-where id_clase=8;
+set cupos=2
+where id_clase=7;
 
 insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
 values (4,sysdate(),'3:00 pm','4:00 pm','Héctor',20);
