@@ -104,6 +104,9 @@
                           <a class="nav-link" href="#Clases">Sala de Pesas</a>
                       </li>
                       <li class="nav-item">
+                          <a class="nav-link" href="#Tips">Tips de Entrenamiento</a>
+                      </li>
+                      <li class="nav-item">
                           <a class="nav-link" href="#Contactenos">Contáctenos</a>
                       </li>
              

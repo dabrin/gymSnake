@@ -63,6 +63,87 @@
       <?php }?>
           </div>
         </div>
+
+          <!--INICIO TIPS ENTRENAMIENTO QUEMADO-->
+          
+        <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="Tips">
+            <h2 class="site-section-heading text-center">Tips de Entrenamiento</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-13 nav-direction-white">
+            <div class="nonloop-block-13 owl-carousel">
+              <div class="media-image">
+                <img src="public/images/img_1.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Entrenamiento Funcional Principiantes</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                </div>
+              </div>
+              <div class="media-image">
+              <img src="public/images/img_2.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Entrenamiento abdomen</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  </p>
+                </div>
+              </div>
+              <div class="media-image">
+              <img src="public/images/img_3.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Entrenamiento de Pesas</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                </div>
+              </div>
+              <div class="media-image">
+              <img src="public/images/img_4.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Crossfit para Avanzados</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate..</p>
+                </div>
+              </div>
+              <div class="media-image">
+              <img src="public/images/img_5.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Entrenamiento GAP</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.
+                  </p>
+                </div>
+              </div>
+              <div class="media-image">
+              <img src="public/images/img_6.jpg" height="312" width="100%">
+                <div class="media-image-body">
+                  <h2>Body Combat</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <!--INICIO TIPS ENTRENAMIENTO QUEMADO-->
+
+
+
+
       </div>
     </div> 
   </div>  
