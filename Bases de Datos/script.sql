@@ -208,95 +208,61 @@ Insert into persona (nombre,telefono) values ('PruebaCupos','987621');
 insert into tipo_clase (nombre_tipo_clase,descripcion)
 values ('Clase de Boxing','Clase para romper hocicos ');
 
+INSERT INTO CLASE (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
+VALUES
+-- Clases de Crossfit
+('1',sysdate(),'9:10 am','10:10 am','Randall',10),
+('1',sysdate(),'9:10 am','10:10 am','Randall',10),
+('1',sysdate(),'9:10 am','10:10 am','Randall',10),
+('1',sysdate(),'9:10 am','10:10 am','Randall',10),
+('1',sysdate(),'9:10 am','10:10 am','Randall',10),
 
+('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
+('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
+('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
+('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
+('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
 
+-- Clases de Funcional
+('2',sysdate(),'8:00 am','9:00 am','Randall',18),
+('2',sysdate(),'8:00 am','9:00 am','Randall',18),
+('2',sysdate(),'8:00 am','9:00 am','Randall',18),
 
+('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
+('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
+('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
+('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
 
+('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
+('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
+('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
 
-update tipo_clase
-set descripcion =  'Crossfit se define como un sistema de entrenamiento de fuerza y acondicionamiento, basado en ejercicios funcionales
-              constantemente variados y realizados a una alta intensidad.'
-where id_tipo_clase = 1;
+('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
+('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
+('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
+('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
+('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
 
-update tipo_clase
-set nombre_tipo_clase = 'Crossfit',
-			    icono = 'flaticon-weightlifter'
+-- Clases de Boxing
+('4',sysdate(),'8:00 am','9:00 am','Héctor',18),
+('4',sysdate(),'8:00 am','9:00 am','Héctor',18),
+('4',sysdate(),'5:00 pm','5:00 pm','Héctor',18),
+('4',sysdate(),'5:00 pm','5:00 pm','Héctor',18),
 
-where id_tipo_clase = 1;
+-- Sala de pesas
+(3,sysdate(),'5:00 am','6:30 am','Grupo 1',15),
+(3,sysdate(),'6:30 am','8:00 am','Grupo 2',15),
+(3,sysdate(),'8:00 am','9:30 am','Grupo 3',15),
+(3,sysdate(),'9:30 am','11:00 am','Grupo 4',15),
+(3,sysdate(),'11:00 am','12:30 pm','Grupo 5',15),
+(3,sysdate(),'12:30 pm','2:00 pm','Grupo 6',15),
+(3,sysdate(),'2:00 pm','3:30 pm','Grupo 7',15),
+(3,sysdate(),'3:30 pm','5:00 pm','Grupo 8',15),
+(3,sysdate(),'5:00 pm','6:30 pm','Grupo 9',15),
+(3,sysdate(),'6:30 pm','8:00 pm','Grupo 10',15),
+(3,sysdate(),'8:00 pm','9:30 pm','Grupo 11',15);
 
-
-update tipo_clase
-set descripcion = 'Functional es un entrenamiento personal muy efectivo, en el que se adaptan los ejercicios a las necesidades personales
-              orientado a mejorar las funciones diarias y a aumentar la calidad de vida de quienes lo practican.',
-              			    icono = 'flaticon-exercise'
-
-where id_tipo_clase = 2;
-select * from tipo_clase;
-
-update tipo_clase
-set descripcion = 'En esta sección podrá seleccionar el horario en el que desea reservar su espacio. En nuestra
-              sala de pesas contamos con gran cantidad de máquinas y equipo para que pueda realizar sus ejercicios de 
-              la mejor manera.' ,
-			    icono = 'flaticon-woman'
-
-where id_tipo_clase = 3;
-
-update tipo_clase
-set descripcion = 'Functional es un entrenamiento personal muy efectivo, en el que se adaptan los ejercicios a las necesidades personales
-              orientado a mejorar las funciones diarias y a aumentar la calidad de vida de quienes lo practican.',
-	nombre_tipo_clase = 'Functional Boxing',
-    icono = 'flaticon-boxing'
-where id_tipo_clase = 4;
-
-
-update tipo_clase
-set descripcion = ''
-where id_tipo_clase = 2;
-
-
-
-select * from clase;
-
-update clase 
-set cupos=2
-where id_clase=7;
-
-insert into clase (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
-values (4,sysdate(),'3:00 pm','4:00 pm','Héctor',20);
-
-insert into clase (id_tipo_clase,instructor,fecha,hora_ini,hora_fin,cupos)
-values (3,'Grupo 1',sysdate(),'5:00 am','6:30 am',15),
-		(3,'Grupo 2',sysdate(),'6:30 am','8:00 am',15),
-        (3,'Grupo 3',sysdate(),'8:00 am','9:30 am',15),
-        (3,'Grupo 4',sysdate(),'9:30 am','11:00 am',15),
-        (3,'Grupo 5',sysdate(),'11:00 am','12:30 pm',15),
-        (3,'Grupo 6',sysdate(),'12:30 pm','2:00 pm',15),
-        (3,'Grupo 7',sysdate(),'2:00 pm','3:30 pm',15),
-        (3,'Grupo 8',sysdate(),'3:30 pm','5:00 pm',15),
-        (3,'Grupo 9',sysdate(),'5:00 pm','6:30 pm',15),
-        (3,'Grupo 10',sysdate(),'6:30 pm','8:00 pm',15),
-        (3,'Grupo 11',sysdate(),'8:00 pm','9:30 pm',15);
-        
-        select * from clase;
-
-call sp_listar_clases;
-select * from persona; 
-select * from persona_clase; 
-
-insert into pesas (grupo,fecha,hora_ini,hora_fin,cupos)
-values ('Grupo 1',sysdate(),'5:00 am','6:30 am',15),
-		('Grupo 2',sysdate(),'6:30 am','8:00 am',15),
-        ('Grupo 3',sysdate(),'8:00 am','9:30 am',15),
-        ('Grupo 4',sysdate(),'9:30 am','11:00 am',15),
-        ('Grupo 5',sysdate(),'11:00 am','12:30 pm',15),
-        ('Grupo 6',sysdate(),'12:30 pm','2:00 pm',15),
-        ('Grupo 7',sysdate(),'2:00 pm','3:30 pm',15),
-        ('Grupo 8',sysdate(),'3:30 pm','5:00 pm',15),
-        ('Grupo 9',sysdate(),'5:00 pm','6:30 pm',15),
-        ('Grupo 10',sysdate(),'6:30 pm','8:00 pm',15),
-        ('Grupo 11',sysdate(),'8:00 pm','9:30 pm',15);
-        
-        select * from pesas;
-
-
-
+delete  from clase  where id_tipo_clase=4;
+select * from clase where cupos= 0;
+UPDATE clase set cupos = 1 WHERE id_clase = 92; -- 1. Crossfit 2. Funcional 3. Pesas 4. Boxing
+select * from persona;
