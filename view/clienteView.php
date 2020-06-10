@@ -28,7 +28,7 @@
         <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
             <div class="row-wrap">             
               <div class="row bg-white p-4 align-items-center ">
-                <div class="col-sm-2 col-md-2 col-lg-2"><?php echo $item[8]; ?></div>
+                <div class="col-sm-2 col-md-2 col-lg-2"><?php echo $item[9]; ?></div>
                 <div class="col-sm-4 col-md-4 col-lg-4"><span class="fas fa-stopwatch"></span> <?php echo $item[3];?> &mdash; <?php echo $item[4];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-dumbbell"></i></span> <?php echo $item[5];?></div>
                 <div class="col-sm-2 col-md-2 col-lg-2"><span ><i class="fas fa-users"></i></span> <?php echo $item[6];?></div>

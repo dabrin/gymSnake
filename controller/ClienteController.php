@@ -36,6 +36,11 @@ class ClienteController {
 
     }
 
+    function listClientes(){
+        require 'model/ClienteModel.php';
+        
+    }
+
     
 
 

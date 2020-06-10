@@ -117,7 +117,25 @@ function verRegistro(id_clase) {
                 location.href = "?controller=Cliente&action=clienteView";
             }
         });
+    }
+    
+    function listarClases(id_clase) {
+    var param = {
+        'id_clase': id_clase
+    };
+
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=data_claseView',
+            type: 'POST',
+            success: function (resp) {
+                location.href = "?controller=Admin&action=claseView";
+            }
+        });
 }
+    
+ 
 
 
 

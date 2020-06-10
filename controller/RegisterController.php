@@ -16,4 +16,5 @@ class RegisterController{
 
         $this->view->show("contactView.php");
     }
+
 }
