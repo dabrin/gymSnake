@@ -18,6 +18,16 @@ class ClienteModel {
     }
 
 
+   public function delete_client(){
+        $id_cliente = $_POST["id_cliente"];
+        $consulta = $this->db->prepare("call sp_borrar_cliente('".$id_cliente."')");
+        $consulta->execute();
+        $consulta->CloseCursor();
+        
+       
+}
+
+
      public function put_client() {
         $nombre = $_POST["nombre"];
         $telefono = $_POST["telefono"];

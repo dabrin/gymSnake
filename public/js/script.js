@@ -10,13 +10,13 @@ function add_idClase(id_clase) {
 
 
 
-    $(document).ready(function () {
+$(document).ready(function () {
     $('#newAccount').validate({
         rules: {
             nombre: {
                 required: true,
                 minlength: 10,
-		        maxlength: 200
+                maxlength: 200
             },
             telefono: {
                 required: true,
@@ -55,7 +55,7 @@ $("#btn1").click(function (e) {
         , nombre: $('#nombre').val()
         , telefono: $('#telefono').val()
     }
-    
+
     Swal.fire({
         title: '¿Está seguro que desea inscribirse en esta clase?',
         text: "En caso de querer cancelar su inscripción después de confirmada, debe de comunicarse al gimnasio!",
@@ -103,6 +103,23 @@ $("#btn1").click(function (e) {
 });
 
 
+function clear_TipoClaseModal() {
+    $("#id_clase").val("");
+    $("#nombre").val("");
+    $("#icono").val("");
+    $("#descripcion").val("");
+}
+function show_tipoClaseById(id_tipo_clase, nombre, icono) {
+    this.id_tipo_clase = id_tipo_clase;
+    this.nombre = nombre;
+    //this.descripcion = descripcion;
+    this.icono = icono;
+    $("#id_clase").val(this.id_tipo_clase);
+    $("#nombre").val(this.nombre);
+    $("#icono").val(this.icono);
+    $("#descripcion").val("Esto es una descripcion...");
+}
+
 function verRegistro(id_clase) {
     var param = {
         'id_clase': id_clase
@@ -117,9 +134,9 @@ function verRegistro(id_clase) {
                 location.href = "?controller=Cliente&action=clienteView";
             }
         });
-    }
-    
-    function listarClases(id_clase) {
+}
+
+function listarClases(id_clase) {
     var param = {
         'id_clase': id_clase
     };
@@ -134,8 +151,40 @@ function verRegistro(id_clase) {
             }
         });
 }
-    
- 
 
+function listarClienteClases(id_clase, id_cliente) {
+    var param = {
+        'id_clase': id_clase,
+        'id_cliente': id_cliente
+
+    };
+
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=data_clientClassView',
+            type: 'POST',
+            success: function (resp) {
+                location.href = "?controller=Admin&action=clientClassView";
+            }
+        });
+}
+
+function delete_client(id_cliente) {
+    var param = {
+        'id_cliente': id_cliente
+    };
+
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=delete_client',
+            type: 'POST',
+            success: function (resp) {
+                location.href = "?controller=Admin&action=clientClassView";
+            }
+        });
+
+}
 
 

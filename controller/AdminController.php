@@ -14,6 +14,26 @@ class AdminController
         $this->view->show("notFoundView.php");
     }
 
+
+    function data_clientClassView(){
+        $_SESSION['id_clase']=$_POST['id_clase'];
+        $_SESSION['id_cliente']=$_POST['id_cliente'];
+
+    }
+
+    function delete_client(){
+        require 'model/ClienteModel.php';
+        $items = new ClienteModel(); 
+        $items->delete_client();
+        //$data['listClientes'] = $items->delete_client();
+        //$this->view->show("clientClassView.php",$data);
+        }
+    function clientClassView(){
+        require 'model/ClienteModel.php';
+        $items = new ClienteModel(); 
+        $data['listClientes'] = $items->get_clients();
+        $this->view->show("clientClassView.php",$data);
+    }
     function showClass(){
         require 'model/ClaseModel.php';
         $items = new ClaseModel();    
