@@ -1,11 +1,56 @@
 <?php include_once 'public/header.php';?>
 
 
-<div class="container">
-<table class="table table-hover table-sm" id=listado>
+
+<?php
+        foreach ($vars['listClases'] as $item){?>
+
+
+
+    <div id="list"class="block-schedule">
+        <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
+            <div class="row-wrap">   
+            <div class="row bg-white p-4 align-items-center ">
+
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <strong> <?php echo $item[1]; ?> </strong>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
+              <button type="button" class="btn btn-success" onclick="listarClases('<?php echo $item[0]?>')">Ver programación de clases
+              <span ><i style="color: aliceblue;" class="fas fa-eye"></i></span>
+            </button>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
+            <button type="button" class="btn btn-secondary" style="background-color: darkcyan; color: aliceblue; border-color: darkcyan;" data-toggle="modal" data-target="#myModal" onclick="show_tipoClaseById('<?php echo $item[0]?>','<?php echo $item[1]?>','<?php echo $item[3]?>')">Editar  <i class="fa fa-edit" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
+            <a type="button" class="btn btn-danger" style="background-color: tomato; color: aliceblue; border-color: tomato;">Eliminar <i class="fas fa-trash"></i></a>
+            </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <?php }?>
+    
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <button type="button" class="btn btn-secondary" style="background-color: chocolate; color: aliceblue; border-color: chocolate;" onclick="clear_TipoClaseModal()" data-toggle="modal" data-target="#myModal">Crear  <i class="fas fa-plus"aria-hidden="true"></i></button>
+    </div>
+    <br>
+
+
+    <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
+
+
+    
+<!--
+  <table class="table table-hover table-sm" id=listado>
           <thead>
             <tr>
-            <!--  <th scope="col">#</th>-->
               
               <th scope="col">Tipo Clase</th>
               <th scope="col"></th>
@@ -26,8 +71,11 @@
         
           </tbody>
         </table>
+-->
 
-        </div>  
+
+
+
 
  
 <?php include_once 'public/footer.php';?>

@@ -180,6 +180,22 @@ BEGIN
 END
 DELIMITER ;
 
+-- SP para borrar los clientes y sumar un cupo
+DELIMITER $$
+CREATE DEFINER=`laboratorios`@`%` PROCEDURE `sp_borrar_cliente`( id int)
+BEGIN
+set @id_clase_ :=(select id_clase from persona_clase where persona_clase.id_persona=id);
+update clase 
+set cupos=cupos+1
+where id_clase=@id_clase_;
+
+DELETE FROM persona_clase 
+WHERE id_persona = id;
+
+DELETE FROM persona
+WHERE id_persona = id;
+END
+DELIMITER;
 -- ------------------------------- PROCEDIMIENTOS ALMACENADOS -------------------------------
 
 
@@ -265,11 +281,22 @@ VALUES
 delete  from clase  where id_tipo_clase=4;
 select * from clase where cupos= 0;
 UPDATE clase set cupos = 1 WHERE id_clase = 92; 
-select * from persona_clase;
+select * from persona;
 select * from tipo_clase;
 
-UPDATE tipo_clase 
-SET icono = '', nombre_tipo_clase = '', descripcion= ''
-WHERE id_tipo_clase = '';
+call sp_listar_persona_clase(100);
+call obtener_clase_id(100);
+call sp_borrar_cliente(8);
+call sp_listar_persona_clase(92);
 
+select * from clase where id_clase = 92;
+
+select * from persona;
+
+SET @Var1:= (SELECT MAX(Colm1) FROM TablaA);
+
+set @var1 := (select nombre from persona where id_persona =1 );
+
+select nombre from  persona
+where nombre = @var1;
 
