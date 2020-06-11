@@ -1,6 +1,7 @@
 <?php include_once 'public/header.php';?>
 
 
+<div class="container">
 <table class="table table-hover table-sm" id=listado>
           <thead>
             <tr>
@@ -24,6 +25,8 @@
         
           </tbody>
         </table>
+
+        </div>  
 
  
 <?php include_once 'public/footer.php';?>

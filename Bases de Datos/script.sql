@@ -264,5 +264,12 @@ VALUES
 
 delete  from clase  where id_tipo_clase=4;
 select * from clase where cupos= 0;
-UPDATE clase set cupos = 1 WHERE id_clase = 92; -- 1. Crossfit 2. Funcional 3. Pesas 4. Boxing
-select * from persona;
+UPDATE clase set cupos = 1 WHERE id_clase = 92; 
+select * from persona_clase;
+select * from tipo_clase;
+
+UPDATE tipo_clase 
+SET icono = '', nombre_tipo_clase = '', descripcion= ''
+WHERE id_tipo_clase = '';
+
+
