@@ -41,6 +41,7 @@
           <div class="row align-items-center">
             <div class="col-6">
             <a href="?controller=Login&action=defaultAction" class="p-2 pl-0"><span class="icon-user"></span></a>
+            
               <a href="https://www.facebook.com/GymSnake/" target="_blank" class="p-2 pl-0"><span class="icon-facebook"></span></a>
               <a href="https://www.instagram.com/gym_snake_turrialba/"  target="_blank" class="p-2 pl-0"><span class="icon-instagram"></span></a>
               <a href="mailto:fe.gymsnake@gmail.com" target="_blank"><span><i class="fas fa-envelope"></i></span> </a><br><br>
@@ -109,9 +110,22 @@
                       <li class="nav-item">
                           <a class="nav-link" href="#Contactenos">Contáctenos</a>
                       </li>
-             
+                     <?php
+                     if (isset($_SESSION['nombre'])){
+
+                  
+                     ?>
+                      <li class="nav-item">
+                          <a class="nav-link" href="?controller=Admin&action=showClass"   >Opciones de Administrador</a>
+                      </li>
+                      <li>
+                      <a class="nav-link" href="?controller=Admin&action=close">Cerrar</a>
+                      </li>
+                     <?php } ?>
                     
                        </ul>
+
+                       
                     
                         </div>
                         </div>

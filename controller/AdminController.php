@@ -68,6 +68,12 @@ class AdminController
         $data['listClases'] = $items->get_clients();
     }
 
+    function close(){
+        unset($_SESSION['nombre']);
+        $this->view->show("indexView.php");
+
+    }
+
 
 }
 

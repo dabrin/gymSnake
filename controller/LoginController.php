@@ -13,6 +13,7 @@ class LoginController{
         $items = new AdminModel();
         if(null!=($items->login())){
             $data='admin';
+            $_SESSION['nombre'] = 'Success'; 
             $this->view->show("perfilView.php",$data);
         }else {$data='Error en usuario o contraseña';
         $this->view->show("perfilView.php",$data);
