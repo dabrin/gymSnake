@@ -120,9 +120,10 @@ function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     $("#descripcion").val("Esto es una descripcion...");
 }
 
-function verRegistro(id_clase) {
+function verRegistro(id_clase,dia) {
     var param = {
-        'id_clase': id_clase
+        'id_clase': id_clase,
+        'dia': dia
     };
 
     $.ajax(

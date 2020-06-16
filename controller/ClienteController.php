@@ -15,6 +15,7 @@ class ClienteController {
 
     function data_clientView(){
         $_SESSION['id_clase']=$_POST['id_clase'];
+        $_SESSION['dia']=$_POST['dia'];
        
 
     }

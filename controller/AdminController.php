@@ -50,7 +50,7 @@ class AdminController
     function claseView(){
         require 'model/ClaseModel.php';
         $items = new ClaseModel(); 
-        $data['listClases'] = $items->get_clases();
+        $data['listClases'] = $items->get_clases_adm();
         $this->view->show("DetailListView.php",$data);
     }
 

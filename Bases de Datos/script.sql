@@ -82,6 +82,8 @@ create table persona_clase(
     constraint foreign key(id_clase) references clase(id_clase)
 );
 
+select * from dia_de_la_semana;
+
 create table administrador(
 id_admin int auto_increment primary key not null, 
 usuario_admin varchar(300) not null,
@@ -224,59 +226,61 @@ Insert into persona (nombre,telefono) values ('PruebaCupos','987621');
 insert into tipo_clase (nombre_tipo_clase,descripcion)
 values ('Clase de Boxing','Clase para romper hocicos ');
 
-INSERT INTO CLASE (id_tipo_clase,fecha,hora_ini,hora_fin,instructor,cupos)
+ALTER TABLE clase CHANGE fecha dia int;
+
+INSERT INTO CLASE (id_tipo_clase,dia,hora_ini,hora_fin,instructor,cupos)
 VALUES
 -- Clases de Crossfit
-('1',sysdate(),'9:10 am','10:10 am','Randall',10),
-('1',sysdate(),'9:10 am','10:10 am','Randall',10),
-('1',sysdate(),'9:10 am','10:10 am','Randall',10),
-('1',sysdate(),'9:10 am','10:10 am','Randall',10),
-('1',sysdate(),'9:10 am','10:10 am','Randall',10),
+('1',1,'9:10 am','10:10 am','Randall',10),
+('1',2,'9:10 am','10:10 am','Randall',10),
+('1',3,'9:10 am','10:10 am','Randall',10),
+('1',4,'9:10 am','10:10 am','Randall',10),
+('1',5,'9:10 am','10:10 am','Randall',10),
 
-('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
-('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
-('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
-('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
-('1',sysdate(),'7:20 pm','8:20 pm','Randall',10),
+('1',1,'7:20 pm','8:20 pm','Randall',10),
+('1',2,'7:20 pm','8:20 pm','Randall',10),
+('1',3,'7:20 pm','8:20 pm','Randall',10),
+('1',4,'7:20 pm','8:20 pm','Randall',10),
+('1',5,'7:20 pm','8:20 pm','Randall',10),
 
 -- Clases de Funcional
-('2',sysdate(),'8:00 am','9:00 am','Randall',18),
-('2',sysdate(),'8:00 am','9:00 am','Randall',18),
-('2',sysdate(),'8:00 am','9:00 am','Randall',18),
+('2',1,'8:00 am','9:00 am','Randall',18),
+('2',3,'8:00 am','9:00 am','Randall',18),
+('2',5,'8:00 am','9:00 am','Randall',18),
 
-('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
-('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
-('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
-('2',sysdate(),'3:00 pm','4:00 pm','Randall',18),
+('2',1,'3:00 pm','4:00 pm','Randall',18),
+('2',2,'3:00 pm','4:00 pm','Randall',18),
+('2',3,'3:00 pm','4:00 pm','Randall',18),
+('2',4,'3:00 pm','4:00 pm','Randall',18),
 
-('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
-('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
-('2',sysdate(),'5:00 pm','6:00 pm','Randall',18),
+('2',1,'5:00 pm','6:00 pm','Randall',18),
+('2',3,'5:00 pm','6:00 pm','Randall',18),
+('2',5,'5:00 pm','6:00 pm','Randall',18),
 
-('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
-('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
-('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
-('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
-('2',sysdate(),'6:10 pm','7:10 pm','Randall',18),
+('2',1,'6:10 pm','7:10 pm','Randall',18),
+('2',2,'6:10 pm','7:10 pm','Randall',18),
+('2',3,'6:10 pm','7:10 pm','Randall',18),
+('2',4,'6:10 pm','7:10 pm','Randall',18),
+('2',5,'6:10 pm','7:10 pm','Randall',18),
 
 -- Clases de Boxing
-('4',sysdate(),'8:00 am','9:00 am','Héctor',18),
-('4',sysdate(),'8:00 am','9:00 am','Héctor',18),
-('4',sysdate(),'5:00 pm','5:00 pm','Héctor',18),
-('4',sysdate(),'5:00 pm','5:00 pm','Héctor',18),
+('4',2,'8:00 am','9:00 am','Héctor',18),
+('4',4,'8:00 am','9:00 am','Héctor',18),
+('4',2,'5:00 pm','5:00 pm','Héctor',18),
+('4',4,'5:00 pm','5:00 pm','Héctor',18),
 
 -- Sala de pesas
-(3,sysdate(),'5:00 am','6:30 am','Grupo 1',15),
-(3,sysdate(),'6:30 am','8:00 am','Grupo 2',15),
-(3,sysdate(),'8:00 am','9:30 am','Grupo 3',15),
-(3,sysdate(),'9:30 am','11:00 am','Grupo 4',15),
-(3,sysdate(),'11:00 am','12:30 pm','Grupo 5',15),
-(3,sysdate(),'12:30 pm','2:00 pm','Grupo 6',15),
-(3,sysdate(),'2:00 pm','3:30 pm','Grupo 7',15),
-(3,sysdate(),'3:30 pm','5:00 pm','Grupo 8',15),
-(3,sysdate(),'5:00 pm','6:30 pm','Grupo 9',15),
-(3,sysdate(),'6:30 pm','8:00 pm','Grupo 10',15),
-(3,sysdate(),'8:00 pm','9:30 pm','Grupo 11',15);
+(3,1,'5:00 am','6:30 am','Grupo 1',15),
+(3,1,'6:30 am','8:00 am','Grupo 2',15),
+(3,1,'8:00 am','9:30 am','Grupo 3',15),
+(3,1,'9:30 am','11:00 am','Grupo 4',15),
+(3,1,'11:00 am','12:30 pm','Grupo 5',15),
+(3,1,'12:30 pm','2:00 pm','Grupo 6',15),
+(3,1,'2:00 pm','3:30 pm','Grupo 7',15),
+(3,1,'3:30 pm','5:00 pm','Grupo 8',15),
+(3,1,'5:00 pm','6:30 pm','Grupo 9',15),
+(3,1,'6:30 pm','8:00 pm','Grupo 10',15),
+(3,1,'8:00 pm','9:30 pm','Grupo 11',15);
 
 delete  from clase  where id_tipo_clase=4;
 select * from clase where cupos= 0;

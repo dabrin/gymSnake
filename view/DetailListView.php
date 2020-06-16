@@ -10,8 +10,36 @@
             <div class="row bg-white p-4 align-items-center ">
 
             <div class="col-sm-2 col-md-2 col-lg-2">
-              <Strong>Fecha:</strong>
-              <?php echo $item[2]; ?>
+              <Strong>Día:</strong>
+              
+              <?php 
+              
+              switch ($item[2]) {
+                
+                case 1:
+                    echo "Lunes";
+                    break;
+                case 2:
+                    echo "Martes";
+                    break;
+                    case 3:
+                    echo "Miércoles";
+                    break;
+                    case 4:
+                    echo "Jueves";
+                    break;
+                    case 5:
+                    echo "Viernes";
+                    break;
+                    case 6:
+                    echo "Sábado";
+                    break;
+                    case 7:
+                    echo "Domingo";
+                   break;
+            }
+              
+              ?>
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3">

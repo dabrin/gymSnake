@@ -56,7 +56,7 @@
             <br>
             <br>
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
-              <a onclick="verRegistro('<?php echo $item[0]?>')" class="btn btn-primary pill px-4 mt-3 mt-md-0" >
+              <a onclick="verRegistro('<?php echo $item[0]?>','1')" class="btn btn-primary pill px-4 mt-3 mt-md-0" >
               <span ><i class="fas fa-eye"></i></span> Ver horarios</a></div>
           </div>
         </div>

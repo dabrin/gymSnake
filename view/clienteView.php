@@ -1,25 +1,26 @@
+
 <?php include_once 'public/header.php';?>
   <div class="site-wrap">
     <div class="site-section bg-light">
       <div id="listado" class="container">
          <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
           <li class="nav-item">
-            <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " data-toggle="modal" data-target="#myModal" href="#pills-monday" role="tab" aria-controls="pills-monday" aria-selected="true">Lunes</a>
+            <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','1')" aria-controls="pills-monday" aria-selected="true">Lunes</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" id="pills-tuesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-tuesday" role="tab" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
+            <a class="btn btn-primary" id="pills-tuesday-tab" style="margin-left: 0.5em" onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','2')" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
           </li>
           <li class="nav-item">
-            <a class=" btn btn-primary" id="pills-wednesday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-wednesday" role="tab" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
+            <a class=" btn btn-primary" id="pills-wednesday-tab" style="margin-left: 0.5em"onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','3')" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
           </li>
           <li class="nav-item">
-            <a class=" btn btn-primary" id="pills-thursday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-thursday" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
+            <a class=" btn btn-primary" id="pills-thursday-tab" style="margin-left: 0.5em"onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','4')" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" id="pills-friday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-friday" role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
+            <a class="btn btn-primary" id="pills-friday-tab" style="margin-left: 0.5em"onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','5')"  role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em" data-toggle="modal" data-target="#myModal" href="#pills-sunday" role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
+            <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em"onclick="verRegistro('<?php echo $_SESSION['id_clase']?>','6')"  role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
           </li>  
         </ul>
     <?php
