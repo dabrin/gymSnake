@@ -34,7 +34,6 @@ class AdminController
         $items->createTipoClase();
        
     }
-
     function deleteTipoClase(){
         require 'model/ClaseModel.php';
         $items = new ClaseModel(); 

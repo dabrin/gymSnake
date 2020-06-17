@@ -115,7 +115,7 @@ function actualizarTipoClase() {
 function actualizarClase() {
     var param = {
         id_clase: $('#id_clase').val()
-        , id_tipo_clase: $('#id_tipo_clase').val()
+        , id_tipo_clase: $('#id_tipo_clase_').val()
         , dia: $('#dia').val()
         , hora_ini: $('#hora_ini').val()
         , hora_fin: $('#hora_fin').val()
@@ -269,7 +269,7 @@ function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     $("#descripcion").val("Esto es una descripcion...");
 }
 
-function showClaseById(id_clase,id_tipo_clase, dia, hora_ini,hora_fin,instructor,cupos) {
+function showClaseById(id_clase, id_tipo_clase, dia, hora_ini, hora_fin, instructor, cupos) {
     this.id_clase = id_clase;
     this.id_tipo_clase = id_tipo_clase;
     this.dia = dia;
@@ -279,13 +279,13 @@ function showClaseById(id_clase,id_tipo_clase, dia, hora_ini,hora_fin,instructor
     this.cupos = cupos;
 
     $("#id_clase").val(this.id_clase);
-    $("#id_tipo_clase").val(this.id_tipo_clase);
+    $("#id_tipo_clase_").val(this.id_tipo_clase);
     $("#dia").val(this.dia);
     $("#hora_ini").val(this.hora_ini);
     $("#hora_fin").val(this.hora_fin);
     $("#instructor").val(this.instructor);
     $("#cupos").val(this.cupos);
-    
+
 }
 
 function verRegistro(id_clase, dia) {
