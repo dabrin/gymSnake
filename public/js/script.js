@@ -56,7 +56,7 @@ function crearTipoClase1() {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#createClass").modal().hide();
+                $("#createClass").modal('hide');
                 $('.modal-backdrop').remove();
             }
         }
@@ -81,7 +81,7 @@ function crearClase1() {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#createClass").modal().hide();
+                $("#createClass").modal('hide');
                 $('.modal-backdrop').remove();
             }
         }
@@ -105,7 +105,7 @@ function actualizarTipoClase() {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#myModal").modal().hide();
+                $("#myModal").modal('hide');
                 $('.modal-backdrop').remove();
             }
         }
@@ -132,8 +132,9 @@ function actualizarClase() {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#myModal").modal().hide();
                 $('.modal-backdrop').remove();
+                $("#myModal").modal('hide');
+
             }
         }
     );
@@ -152,8 +153,8 @@ function eliminarTipoClase(id_clase_) {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#myModal").modal().hide();
-                $('.modal-backdrop').remove();
+                //$("#myModal").modal().hide();
+                //$('.modal-backdrop').remove();
             }
         }
     );
@@ -173,8 +174,8 @@ function eliminarClase(id_clase_) {
             success: function (response) {
                 $("#container").load(location.href + " #container");
                 //clear();
-                $("#myModal").modal().hide();
-                $('.modal-backdrop').remove();
+                //$("#myModal").modal().hide();
+                //$('.modal-backdrop').remove();
             }
         }
     );
