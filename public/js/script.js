@@ -63,6 +63,32 @@ function crearTipoClase1() {
     );
 }
 
+
+function crearClase1() {
+    var param = {
+        id_tipo_clase1: $('#id_tipo_clase1_').val()
+        , dia: $('#dia_').val()
+        , hora_ini: $('#hora_ini_').val()
+        , hora_fin: $('#hora_fin_').val()
+        , instructor: $('#instructor_').val()
+        , cupos: $('#cupos_').val()
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=createClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#createClass").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
+
+
 function actualizarTipoClase() {
     var param = {
         id_clase: $('#id_clase').val()
@@ -86,6 +112,33 @@ function actualizarTipoClase() {
     );
 }
 
+function actualizarClase() {
+    var param = {
+        id_clase: $('#id_clase').val()
+        , id_tipo_clase: $('#id_tipo_clase').val()
+        , dia: $('#dia').val()
+        , hora_ini: $('#hora_ini').val()
+        , hora_fin: $('#hora_fin').val()
+        , instructor: $('#instructor').val()
+        , cupos: $('#cupos').val()
+
+
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=updateClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#myModal").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
+
 function eliminarTipoClase(id_clase_) {
     var param = {
         id_clase: id_clase_
@@ -95,6 +148,27 @@ function eliminarTipoClase(id_clase_) {
         {
             data: param,
             url: '?controller=Admin&action=deleteTipoClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#myModal").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
+
+
+function eliminarClase(id_clase_) {
+    var param = {
+        id_clase: id_clase_
+
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=deleteClase',
             type: 'POST',
             success: function (response) {
                 $("#container").load(location.href + " #container");
@@ -172,6 +246,18 @@ function clear_TipoClaseModal() {
     $("#descripcion").val("");
 }
 
+
+function clear_ClaseModal() {
+    $("#id_clase").val(""); //QUITAR
+    $("#id_tipo_clase1").val("");
+    $("#dia").val("");
+    $("#hora_ini").val("");
+    $("#hora_fin").val("");
+    $("#instructor").val("");
+    $("#cupos").val("");
+}
+
+
 function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     this.id_tipo_clase = id_tipo_clase;
     this.nombre = nombre;
@@ -181,6 +267,25 @@ function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     $("#nombre").val(this.nombre);
     $("#icono").val(this.icono);
     $("#descripcion").val("Esto es una descripcion...");
+}
+
+function showClaseById(id_clase,id_tipo_clase, dia, hora_ini,hora_fin,instructor,cupos) {
+    this.id_clase = id_clase;
+    this.id_tipo_clase = id_tipo_clase;
+    this.dia = dia;
+    this.hora_ini = hora_ini;
+    this.hora_fin = hora_fin;
+    this.instructor = instructor;
+    this.cupos = cupos;
+
+    $("#id_clase").val(this.id_clase);
+    $("#id_tipo_clase").val(this.id_tipo_clase);
+    $("#dia").val(this.dia);
+    $("#hora_ini").val(this.hora_ini);
+    $("#hora_fin").val(this.hora_fin);
+    $("#instructor").val(this.instructor);
+    $("#cupos").val(this.cupos);
+    
 }
 
 function verRegistro(id_clase, dia) {

@@ -27,6 +27,7 @@ class AdminController
        
     }
 
+
      function createTipoClase(){
         require 'model/ClaseModel.php';
         $items = new ClaseModel(); 
@@ -41,6 +42,30 @@ class AdminController
        
     }
 
+
+    function createClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->createClase();
+       
+    }
+   
+
+
+    function deleteClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->deleteClase();
+       
+    }
+
+
+    function updateClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->updateClase();
+       
+    }
 
     function delete_client(){
         require 'model/ClienteModel.php';

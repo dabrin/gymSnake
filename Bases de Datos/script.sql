@@ -226,6 +226,8 @@ Insert into persona (nombre,telefono) values ('PruebaCupos','987621');
 insert into tipo_clase (nombre_tipo_clase,descripcion)
 values ('Clase de Boxing','Clase para romper hocicos ');
 
+call sp_insert_tipo_clase('flaticon-exercise','Clase de Box','Clase para romper hocicos ');
+
 ALTER TABLE clase CHANGE fecha dia int;
 
 INSERT INTO CLASE (id_tipo_clase,dia,hora_ini,hora_fin,instructor,cupos)
@@ -282,6 +284,8 @@ VALUES
 (3,1,'6:30 pm','8:00 pm','Grupo 10',15),
 (3,1,'8:00 pm','9:30 pm','Grupo 11',15);
 
+select * from clase;
+
 delete  from clase  where id_tipo_clase=4;
 select * from clase where cupos= 0;
 UPDATE clase set cupos = 1 WHERE id_clase = 92; 
@@ -303,4 +307,17 @@ set @var1 := (select nombre from persona where id_persona =1 );
 
 select nombre from  persona
 where nombre = @var1;
+
+
+call sp_listar_clases (1,1);
+
+select * from tipo_clase;
+
+select * from clase;
+
+call sp_update_clase (173,3,2,'9:40 pm','10:40 pm','Grupo 25',5);
+
+call sp_insertar_clase (3,2,'9:40 pm','10:40 pm','Grupo 28',5);
+
+
 
