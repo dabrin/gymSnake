@@ -1,6 +1,8 @@
 <?php include_once 'public/header.php';?>
 
 
+<div id="container">
+
 
 <?php
         foreach ($vars['listClases'] as $item){?>
@@ -28,7 +30,7 @@
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
-            <a type="button" class="btn btn-danger" style="background-color: tomato; color: aliceblue; border-color: tomato;">Eliminar <i class="fas fa-trash"></i></a>
+            <a type="button" class="btn btn-danger" style="background-color: tomato; color: aliceblue; border-color: tomato;" onclick="eliminarTipoClase('<?php echo $item[0]?>')">Eliminar <i class="fas fa-trash"></i></a>
             </div>
 
             </div>
@@ -36,9 +38,12 @@
         </div>
     </div>
     <?php }?>
+
+</div>
+
     
     <div class="col-sm-3 col-md-3 col-lg-3">
-    <button type="button" class="btn btn-secondary" style="background-color: chocolate; color: aliceblue; border-color: chocolate;" onclick="clear_TipoClaseModal()" data-toggle="modal" data-target="#myModal">Crear  <i class="fas fa-plus"aria-hidden="true"></i></button>
+    <button type="button" class="btn btn-secondary" style="background-color: chocolate; color: aliceblue; border-color: chocolate;" onclick="clear_TipoClaseModal()" data-toggle="modal" data-target="#createClass">Crear  <i class="fas fa-plus"aria-hidden="true"></i></button>
     </div>
     <br>
 
@@ -75,11 +80,7 @@
 
 
 
-
-
- 
-<?php include_once 'public/footer.php';?>
-  <script src="public/js/jquery-3.3.1.min.js"></script>
+   <script src="public/js/jquery-3.3.1.min.js"></script>
     <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="public/js/jquery-ui.js"></script>
     <script src="public/js/popper.min.js"></script>
@@ -90,9 +91,13 @@
     <script src="public/js/jquery.magnific-popup.min.js"></script>
     <script src="public/js/bootstrap-datepicker.min.js"></script>
     <script src="public/js/aos.js"></script>
-<script src="public/js/jquery-3.3.1.min.js"></script>
+
+  <script src="public/js/main.js"></script>
 
 <script src="public/js/script.js"></script>
+
+<?php include_once 'public/footer.php';?>
+
 
 
 
@@ -108,7 +113,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-          <form id="newAccount" class="p-5 bg-white" >
+          <form id="" class="p-5 bg-white" >
           <div class="row form-group">
             <input hidden type="text" name="id_clase" id="id_clase" class="form-control" placeholder="id_clase" required>
             <div class="col-md-12 mb-3 mb-md-0">
@@ -130,7 +135,56 @@
           </div>
           <div class="row form-group">
             <div class="col-md-12">
-              <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn1" value="Guardar" > 
+              <input class="btn btn-primary pill px-4 mt-3 mt-md-0" onclick="actualizarTipoClase()" value="Guardar" > 
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="createClass">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Tipo Clase</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form id="" class="p-5 bg-white" >
+          <div class="row form-group">
+           
+            <div class="col-md-12 mb-3 mb-md-0">
+              <label class="font-weight-bold" for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre_" class="form-control" placeholder="Nombre" required>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-12 mb-3 mb-md-0">
+              <label class="font-weight-bold" for="icono">Icono</label>
+              <input type="text" name="icono" id="icono_" class="form-control" placeholder="Icono" required>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-12 mb-3 mb-md-0">
+              <label class="font-weight-bold" for="descricion">Descripcion</label>
+              <textarea type="text" name="descripcion" id="descripcion_" class="form-control" placeholder="Escriba aquí una descripción..." required></textarea>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-12">
+              <input class="btn btn-primary pill px-4 mt-3 mt-md-0" onclick="crearTipoClase1()" value="Guardar" > 
             </div>
           </div>
         </form>

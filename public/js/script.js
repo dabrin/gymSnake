@@ -42,7 +42,69 @@ $(document).ready(function () {
     });
 });
 
+function crearTipoClase1() {
+    var param = {
+        nombre: $('#nombre_').val()
+        , icono: $('#icono_').val()
+        , descripcion: $('#descripcion_').val()
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=createTipoClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#createClass").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
 
+function actualizarTipoClase() {
+    var param = {
+        id_clase: $('#id_clase').val()
+        , nombre: $('#nombre').val()
+        , icono: $('#icono').val()
+        , descripcion: $('#descripcion').val()
+
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=updateTipoClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#myModal").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
+
+function eliminarTipoClase(id_clase_) {
+    var param = {
+        id_clase: id_clase_
+
+    }
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=deleteTipoClase',
+            type: 'POST',
+            success: function (response) {
+                $("#container").load(location.href + " #container");
+                //clear();
+                $("#myModal").modal().hide();
+                $('.modal-backdrop').remove();
+            }
+        }
+    );
+}
 
 
 
@@ -109,10 +171,11 @@ function clear_TipoClaseModal() {
     $("#icono").val("");
     $("#descripcion").val("");
 }
+
 function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     this.id_tipo_clase = id_tipo_clase;
     this.nombre = nombre;
-    //this.descripcion = descripcion;
+    this.descripcion = descripcion;
     this.icono = icono;
     $("#id_clase").val(this.id_tipo_clase);
     $("#nombre").val(this.nombre);
@@ -120,7 +183,7 @@ function show_tipoClaseById(id_tipo_clase, nombre, icono) {
     $("#descripcion").val("Esto es una descripcion...");
 }
 
-function verRegistro(id_clase,dia) {
+function verRegistro(id_clase, dia) {
     var param = {
         'id_clase': id_clase,
         'dia': dia

@@ -35,4 +35,38 @@ class ClaseModel {
         return $resulado; 
     }
 
+    public function updateTipoClase(){
+        $id_clase=$_POST['id_clase'];
+        $nombre=$_POST['nombre'];
+        $icono=$_POST['icono'];
+        $descripcion=$_POST['descripcion'];
+        $consulta = $this->db->prepare("call sp_update_tipo_clase('".$id_clase ."','".$icono."','".$nombre."','".$descripcion."')");
+        $consulta->execute();
+        $resulado = $consulta->fetchAll();
+        $consulta->CloseCursor();
+
+    }
+
+    public function createTipoClase(){
+        $nombre=$_POST['nombre'];
+        $icono=$_POST['icono'];
+        $descripcion=$_POST['descripcion'];
+        $consulta = $this->db->prepare("call sp_insert_tipo_clase('".$icono."','".$nombre."','".$descripcion."')");
+        $consulta->execute();
+        $resulado = $consulta->fetchAll();
+        $consulta->CloseCursor();
+        
+        
+    }
+     public function deleteTipoClase(){
+        $id_clase=$_POST['id_clase'];
+       
+        $consulta = $this->db->prepare("call sp_delete_tipo_clase('".$id_clase."')");
+        $consulta->execute();
+        $resulado = $consulta->fetchAll();
+        $consulta->CloseCursor();
+        
+        
+    }
+
 }

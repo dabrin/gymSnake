@@ -18,8 +18,29 @@ class AdminController
     function data_clientClassView(){
         $_SESSION['id_clase']=$_POST['id_clase'];
         $_SESSION['id_cliente']=$_POST['id_cliente'];
-
     }
+
+    function updateTipoClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->updateTipoClase();
+       
+    }
+
+     function createTipoClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->createTipoClase();
+       
+    }
+
+    function deleteTipoClase(){
+        require 'model/ClaseModel.php';
+        $items = new ClaseModel(); 
+        $items->deleteTipoClase();
+       
+    }
+
 
     function delete_client(){
         require 'model/ClienteModel.php';
@@ -54,12 +75,8 @@ class AdminController
         $this->view->show("DetailListView.php",$data);
     }
 
-
-
-
     function data_detalleView(){
         $_SESSION['id_clase']=$_POST['id_clase'];
-
     }
 
     function detalleView(){
@@ -71,8 +88,9 @@ class AdminController
     function close(){
         unset($_SESSION['nombre']);
         $this->view->show("indexView.php");
-
     }
+
+
 
 
 }
