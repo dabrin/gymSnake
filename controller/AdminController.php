@@ -88,7 +88,7 @@ class AdminController
 
 
     function data_claseView(){
-        $_SESSION['id_clase']=$_POST['id_clase'];
+        $_SESSION['id_Tipo_clase']=$_GET['id_clase'];
 
     }
 

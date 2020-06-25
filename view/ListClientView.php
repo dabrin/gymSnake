@@ -107,7 +107,7 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Tipo Clase</h4>
+        <h4 class="modal-title">Modificar Tipo Clase</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -156,7 +156,7 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Tipo Clase</h4>
+        <h4 class="modal-title">Crear Tipo Clase</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 

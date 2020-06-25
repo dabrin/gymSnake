@@ -27,7 +27,7 @@ class ClaseModel {
     }
 
     public function get_clases_adm(){
-        $id_clase=$_SESSION["id_clase"];
+        $id_clase=$_SESSION["id_Tipo_clase"];
         $consulta = $this->db->prepare("call sp_listar_clases_adm('".$id_clase ."')");
         $consulta->execute();
         $resulado = $consulta->fetchAll();

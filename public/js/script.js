@@ -219,7 +219,7 @@ $("#btn1").click(function (e) {
                         );
                         $("#listado").load(location.href + " #listado");
                         clear();
-                        $("#myModal").modal().hide();
+                        $("#myModal").modal('hide');
                         $('.modal-backdrop').remove();
                     }
                 }
@@ -315,7 +315,7 @@ function listarClases(id_clase) {
         {
             data: param,
             url: '?controller=Admin&action=data_claseView',
-            type: 'POST',
+            type: 'GET',
             success: function (resp) {
                 location.href = "?controller=Admin&action=claseView";
             }

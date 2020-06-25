@@ -20,7 +20,7 @@
                         <input type="password" class="form-control" name="pass"id="pass" 
                                placeholder="Escriba su contraseña">
                     </div>
-                    <button type="submit" id="btn1" class="btn btn-primary">Enviar</button>
+                    <!--<button type="submit" id="btn1" class="btn btn-primary">Enviar</button>-->
                     <button type="submit" id="btn" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
@@ -97,7 +97,7 @@ function clear(){
            icon:'success'
           }
           );
-         // $("#listado").load(location.href + " #listado");
+           location.href="?controller=Admin&action=showClass"
           clear();
         }
       }
