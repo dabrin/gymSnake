@@ -15,7 +15,13 @@
     <link rel="stylesheet" href="public/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="public/images/logo.ico"/>
+
+<!--    <link rel="icon" type="image/png" href="public/images/logo.ico"/>-->
+
+<link rel="icon" sizes="192x192" href="public/images/icon1.png">
+<link rel="apple-touch-icon" href="public/images/icon1.png ">
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="sweetalert2.all.min.js"></script>

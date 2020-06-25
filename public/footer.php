@@ -53,9 +53,9 @@
             Copyright &copy <script>document.write(new Date().getFullYear());</script>
             
             | Todos los derechos reservados | Esta página web está hecha por 
-            <a href="https://www.facebook.com/pablo.rojasm.5"  target="_blank">Pablo Rojas M.</a>
+            <a href="https://www.facebook.com/pablo.rojasm.5"  target="_blank"><u>Pablo Rojas M.</u></a>
               y
-            <a href="https://www.facebook.com/dabrin.najera"  target="_blank">Dabrin Nájera B.</a>
+            <a href="https://www.facebook.com/dabrin.najera"  target="_blank"><u>Dabrin Nájera B.</u></a>
             </p>
           </div>
           
