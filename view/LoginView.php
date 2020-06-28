@@ -91,13 +91,13 @@ function clear(){
         url:'?controller=Login&action=login',
         type:'POST',
         success:function(response){
-          Swal.fire({
+         /* Swal.fire({
            html:'Inicio de sesión exitoso!<br>' + 'Bienvenido al apartado de administrador :)',
            type:'success',
            icon:'success'
           }
-          );
-           location.href="?controller=Admin&action=showClass"
+          );*/
+          location.href="?controller=Admin&action=showClass"
           clear();
         }
       }
@@ -122,3 +122,5 @@ function clear(){
 </script>
 
 <?php include_once 'public/footer.php';?>
+
+
