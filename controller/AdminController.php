@@ -74,16 +74,25 @@ class AdminController
         //$this->view->show("clientClassView.php",$data);
         }
     function clientClassView(){
+        if(isset($_SESSION['nombre'])){
         require 'model/ClienteModel.php';
         $items = new ClienteModel(); 
         $data['listClientes'] = $items->get_clients();
         $this->view->show("clientClassView.php",$data);
+        }
+        else 
+        $this->view->show("LoginView.php");
+        
     }
     function showClass(){
+        if(isset($_SESSION['nombre'])){
         require 'model/ClaseModel.php';
         $items = new ClaseModel();    
         $data['listClases'] = $items->get_tipo_clases();
-        $this->view->show("ListClientView.php",$data);
+        $this->view->show("ListClientView.php",$data);}
+        else{
+            $this->view->show("LoginView.php");
+        }
     }
 
 
@@ -93,21 +102,28 @@ class AdminController
     }
 
     function claseView(){
+    if (isset($_SESSION['nombre'])){
         require 'model/ClaseModel.php';
         $items = new ClaseModel(); 
         $data['listClases'] = $items->get_clases_adm();
         $this->view->show("DetailListView.php",$data);
+    }else {
+        $this->view->show("LoginView.php");
     }
+}
 
     function data_detalleView(){
         $_SESSION['id_clase']=$_POST['id_clase'];
     }
 
     function detalleView(){
-        require 'model/ClienteModel.php';
-        $items = new ClienteModel(); 
-        $data['listClases'] = $items->get_clients();
-    }
+        if(isset($_SESSION['nombre'])){
+            require 'model/ClienteModel.php';
+            $items = new ClienteModel(); 
+            $data['listClases'] = $items->get_clients();
+        }else 
+        $this->view-show("LoginView.php");
+}
 
     function close(){
         unset($_SESSION['nombre']);

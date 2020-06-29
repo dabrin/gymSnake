@@ -91,12 +91,8 @@ function clear(){
         url:'?controller=Login&action=login',
         type:'POST',
         success:function(response){
-         /* Swal.fire({
-           html:'Inicio de sesión exitoso!<br>' + 'Bienvenido al apartado de administrador :)',
-           type:'success',
-           icon:'success'
-          }
-          );*/
+         
+         
           location.href="?controller=Admin&action=showClass"
           clear();
         }

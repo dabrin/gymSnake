@@ -102,7 +102,7 @@
     <br>
 
 
- <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
+ <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=Admin&action=showClass" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
 
 
