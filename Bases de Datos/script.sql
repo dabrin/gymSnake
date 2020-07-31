@@ -26,9 +26,9 @@ nombre_tipo_clase varchar(300) not null,
 descripcion varchar(500)
 );
 
-alter table tipo_clase
-  add icono varchar(200) not null;
-  
+/*alter table tipo_clase
+  -add icono varchar(200) not null;
+  */
 
 create table tips_entrenamiento (
 id_tips_entrenamiento int not null auto_increment primary key,

@@ -20,7 +20,7 @@
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3 text-md-right">
-              <button type="button" class="btn btn-success" onclick="listarClases('<?php echo $item[0]?>')">Ver programación de clases
+              <button type="button" class="btn btn-success" onclick="listarClases('<?php echo $item[0]?>','1')">Ver programación de clases
               <span ><i style="color: aliceblue;" class="fas fa-eye"></i></span>
             </button>
             </div>

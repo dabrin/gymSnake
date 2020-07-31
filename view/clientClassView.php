@@ -39,37 +39,6 @@
 
     <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=Admin&action=claseView" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
 
-
-
-<!--
-  <table class="table table-hover table-sm" id=listado>
-          <thead>
-            <tr>
-              
-            <th scope="col">Nombre</th>
-              <th scope="col">Teléfono</th>
-              <th scope="col">Opción</th>
-              <th scope="col"></th>
-
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($vars['listClientes'] as $item){?>
-            <tr>
-              <td><?php echo $item[0];?> </td> 
-              <td><?php echo $item[1];?></td>
-              -<td><a type="button" class="btn btn-primary" onclick="delete_client('<?php echo $item[2]?>')">Eliminar <i class="fas fa-trash"></i></a></td>
-
-              <?php } ?>
-            </tr>
-            <td><a type="button" class="btn btn-success" onclick="verRegistro('<?php echo $item[0]?>')">Crear clase</a></td>
-
-        
-          </tbody>
-        </table
--->
-
-
     
 <?php include_once 'public/footer.php';?>
 

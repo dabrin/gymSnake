@@ -33,12 +33,10 @@
       
       <div class="col-sm-3 col-md-3 col-lg-3"><a href="?controller=index&action=defaultAction" class="btn btn-primary pill px-4 mt-3 mt-md-0"><span ><i class="fas fa-long-arrow-alt-left"></i></span> Volver </a></div>
   
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="sweetalert2.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-<script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
     <script src="public/js/jquery-3.3.1.min.js"></script>
     <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="public/js/jquery-ui.js"></script>
@@ -75,7 +73,7 @@ function clear(){
  }
   Swal.fire({
   title: '¿Está seguro que desea iniciar sesión?',
-  text: "En caso de haber ingresado los datos de forma incorrecta, presione sobre el botón 'No' !",
+  text: "Estas opciones son de uso exclusivo de los administradores del gimnasio!",
   icon: 'warning',
   showCancelButton: true,
   cancelButtonText: 'No',

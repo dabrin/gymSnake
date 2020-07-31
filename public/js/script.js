@@ -37,7 +37,8 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
-            $("#btn1");
+
+            $("#btn1").ajaxSubmit();
         }
     });
 });
@@ -186,12 +187,22 @@ function eliminarClase(id_clase_) {
 
 
 $("#btn1").click(function (e) {
+
+
+    id_clase_ = $('#id_clase').val();
+    nombre_ = $('#nombre').val();
+    telefono_ = $('#telefono').val();
+
     e.preventDefault();
     var param = {
         id_clase: $('#id_clase').val()
         , nombre: $('#nombre').val()
         , telefono: $('#telefono').val()
     }
+
+
+
+
 
     Swal.fire({
         title: '¿Está seguro que desea inscribirse en esta clase?',
@@ -305,17 +316,35 @@ function verRegistro(id_clase, dia) {
             }
         });
 }
-
-function listarClases(id_clase) {
+function verRegistroAdm(id_clase, dia) {
     var param = {
-        'id_clase': id_clase
+        'id_clase': id_clase,
+        'dia': dia
     };
 
     $.ajax(
         {
             data: param,
             url: '?controller=Admin&action=data_claseView',
-            type: 'GET',
+            type: 'POST',
+            success: function (resp) {
+                location.href = "?controller=Admin&action=claseView";
+            }
+        });
+}
+
+function listarClases(id_clase, dia) {
+    var param = {
+        'id_clase': id_clase,
+        'dia': dia,
+
+    };
+
+    $.ajax(
+        {
+            data: param,
+            url: '?controller=Admin&action=data_claseView',
+            type: 'POST',
             success: function (resp) {
                 location.href = "?controller=Admin&action=claseView";
             }

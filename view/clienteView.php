@@ -56,11 +56,8 @@
     <br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-  <script src="sweetalert2.min.js"></script>
-  <link rel="stylesheet" href="sweetalert2.min.css">
   
     <script src="public/js/jquery-3.3.1.min.js"></script>
     <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
@@ -102,7 +99,7 @@
           </div>
           <div class="row form-group">
             <div class="col-md-12">
-              <input type="submit" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn1" value="Inscribirse" > 
+              <input type="button" class="btn btn-primary pill px-4 mt-3 mt-md-0" id="btn1" value="Inscribirse" > 
             </div>
           </div>
         </form>

@@ -1,12 +1,38 @@
-<?php include_once 'public/header.php';?>
+<?php include_once 'public/header.php';
+
+?>
 
 
-<div id="container">
-
+<div id="container" class="container">
+<br>
+<br>
+  <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','1')" aria-controls="pills-monday" aria-selected="true">Lunes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-tuesday-tab" style="margin-left: 0.5em" onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','2')" aria-controls="pills-tuesday" aria-selected="false">Martes</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-wednesday-tab" style="margin-left: 0.5em"onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','3')" aria-controls="pills-wednesday" aria-selected="false">Miércoles</a>
+          </li>
+          <li class="nav-item">
+            <a class=" btn btn-primary" id="pills-thursday-tab" style="margin-left: 0.5em"onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','4')" role="tab" aria-controls="pills-thursday" aria-selected="false">Jueves</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-friday-tab" style="margin-left: 0.5em"onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','5')"  role="tab" aria-controls="pills-friday" aria-selected="false">Viernes</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em"onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','6')"  role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
+          </li>  
+        </ul>
 <?php
+        
+        
         foreach ($vars['listClases'] as $item){?>
 
-<div id="list"class="block-schedule">
+        <div id="list"class="block-schedule">
+
         <div class="fade show active" id="pills-sunday" role="tabpanel" aria-labelledby="pills-sunday-tab">  
             <div class="row-wrap">   
             <div class="row bg-white p-4 align-items-center ">

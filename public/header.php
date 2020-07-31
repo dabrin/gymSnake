@@ -24,11 +24,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="sweetalert2.all.min.js"></script>
-<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-<script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 
     
     
@@ -100,7 +96,8 @@
                     <div class="collapse navbar-collapse d-lg-none ml-md-0 mr-auto" id="navbarSupportedContent">
 
                       <ul class="navbar-nav mr-auto site-menu ">
-
+                      <?php
+                     if (!isset($_SESSION['nombre'])){?>
                       <li class="nav-item">
                           <a class="nav-link" href="#SobreNosotros">Sobre Nosotros</a>
                       </li>
@@ -115,7 +112,7 @@
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#Contactenos">Contáctenos</a>
-                      </li>
+                      </li> <?php } ?>
                      <?php
                      if (isset($_SESSION['nombre'])){
 
