@@ -21,7 +21,7 @@
                                placeholder="Escriba su contraseña">
                     </div>
                     <!--<button type="submit" id="btn1" class="btn btn-primary">Enviar</button>-->
-                    <button type="submit" id="btn" class="btn btn-primary">Enviar</button>
+                    <button type="submit" id="btn" class="btn btn-primary">Iniciar Sesión</button>
                 </form>
             </div>
         </div>

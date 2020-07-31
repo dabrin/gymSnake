@@ -7,7 +7,6 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>Build Your <strong>Body</strong> Strong</h1>
             </div>
           </div>
         </div>
@@ -19,7 +18,6 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>Build Your <strong>Body</strong> Strong</h1>
             </div>
           </div>
         </div>
@@ -30,7 +28,6 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>Build Your <strong>Body</strong> Strong</h1>
             </div>
           </div>
         </div>
@@ -42,7 +39,6 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>Build Your <strong>Body</strong> Strong</h1>
             </div>
           </div>
         </div>

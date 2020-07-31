@@ -2,10 +2,10 @@
 
 ?>
 
+<div class="site-wrap">
+    <div class="site-section bg-light">
+      <div id="listado" class="container"> 
 
-<div id="container" class="container">
-<br>
-<br>
   <ul class="nav nav-pills tab-nav mb-4" id="pills-tab" role="tablist">
           <li class="nav-item">
             <a class="btn btn-primary" id="pills-monday-tab" style="margin-left: 0.5em; " onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','1')" aria-controls="pills-monday" aria-selected="true">Lunes</a>
@@ -26,6 +26,7 @@
             <a class="btn btn-primary" id="pills-sunday-tab" style="margin-left: 0.5em"onclick="verRegistroAdm('<?php echo $_SESSION['id_clase']?>','6')"  role="tab" aria-controls="pills-saturday" aria-selected="true">Sábado</a>
           </li>  
         </ul>
+      </div>
 <?php
         
         
@@ -116,7 +117,6 @@
 </div>
 <?php }?>
 
-</div>
 
 <div class="col-sm-3 col-md-3 col-lg-3">
 <a type="button" style="background-color: chocolate; color: aliceblue; border-color: chocolate;" class="btn btn-success" 
