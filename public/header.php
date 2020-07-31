@@ -51,13 +51,13 @@
             <div class="col-6">
               <div class="d-flex ml-auto">
                 <a href="tel://+50688177225" class="d-flex align-items-center ml-auto mr-4">
-                Héctor
+                Héctor &nbsp;
                 <span class="icon-phone mr-2"></span>
                   <span class="d-none d-md-inline-block">88901565</span>
                 </a>
 
                 <a href="tel://+50688177225" class="d-flex align-items-center">
-                Randall
+                Randall &nbsp;
                   <span class="icon-phone mr-2"></span>
                   <span class="d-none d-md-inline-block">88177225</span>
                 </a>
@@ -108,7 +108,7 @@
                           <a class="nav-link" href="#Clases">Sala de Pesas</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#Tips">Tips de Entrenamiento</a>
+                          <a class="nav-link" href="#Tips">Datos Informativos</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#Contactenos">Contáctenos</a>
