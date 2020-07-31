@@ -100,8 +100,8 @@ class AdminController
         //$_SESSION['id_Tipo_clase']=$_GET['id_clase'];
         //$_SESSION['id_Tipo_clase']=$_GET['id_clase'];
 
-        $_SESSION['id_clase']=$_POST['id_clase'];
-        $_SESSION['dia']=$_POST['dia'];
+        $_SESSION['id_clase_adm']=$_POST['id_clase'];
+        $_SESSION['dia_adm']=$_POST['dia'];
 
 
     }
@@ -110,7 +110,7 @@ class AdminController
     if (isset($_SESSION['nombre'])){
         require 'model/ClaseModel.php';
         $items = new ClaseModel(); 
-        $data['listClases'] = $items->get_clases();
+        $data['listClases'] = $items->get_clases_adm();
         $this->view->show("DetailListView.php",$data);
     }else {
         $this->view->show("LoginView.php");

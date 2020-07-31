@@ -192,7 +192,7 @@ $("#btn1").click(function (e) {
     id_clase_ = $('#id_clase').val();
     nombre_ = $('#nombre').val();
     telefono_ = $('#telefono').val();
-
+    0
     e.preventDefault();
     var param = {
         id_clase: $('#id_clase').val()
